@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hZYve3dU/8QENa9T+Sk6aDeoyWmhbVFk5NpW+1AceLjqhKpifxnti8jhGuaHCPN3EAsJIpSst2jHos3hsXjXfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\2116787\\OneDrive - Cognizant\\Desktop\\Training-Project\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\2116787\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.0\\microsoft.visualstudio.azure.containers.tools.targets.1.17.0.nupkg.sha512"
+  ],
+  "logs": []
+}
