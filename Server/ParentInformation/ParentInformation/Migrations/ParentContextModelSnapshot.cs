@@ -75,7 +75,7 @@ namespace ParentInformation.Migrations
 
                     b.HasKey("RegistationId");
 
-                    b.ToTable("parents");
+                    b.ToTable("parent");
                 });
 #pragma warning restore 612, 618
         }

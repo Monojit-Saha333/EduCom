@@ -8,6 +8,6 @@ namespace ParentInformation.Models
         {
 
         }
-        public DbSet<Parent> parents { get; set; }  
+        public DbSet<Parent> parent { get; set; }  
     }
 }

@@ -9,8 +9,8 @@ using ParentInformation.Models;
 namespace ParentInformation.Migrations
 {
     [DbContext(typeof(ParentContext))]
-    [Migration("20220919054311_migrate")]
-    partial class migrate
+    [Migration("20220919081230_migrat")]
+    partial class migrat
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -77,7 +77,7 @@ namespace ParentInformation.Migrations
 
                     b.HasKey("RegistationId");
 
-                    b.ToTable("parents");
+                    b.ToTable("parent");
                 });
 #pragma warning restore 612, 618
         }
