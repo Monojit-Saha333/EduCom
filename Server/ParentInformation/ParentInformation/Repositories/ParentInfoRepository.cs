@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Newtonsoft.Json;
 using ParentInformation.Models;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,44 +21,63 @@ namespace ParentInformation.Repositories
         //create command
         public void CreateParent(Parent parent)
         {
-            if(parent==null)
-            throw new System.NotImplementedException();
-            context.parents.Add(parent);
+           /* Parent parent1 = new Parent()
+            {
+                StudentRegistrationId = parent.StudentRegistrationId,
+                RegistationId = parent.RegistationId,
+                ParentName = parent.ParentName,
+                StudentName = parent.StudentName,
+                Address = parent.Address,
+                State = parent.State,
+                Country = parent.Country,
+                City = parent.City,
+                Zipcode = parent.Zipcode,
+            EmailAddress = parent.EmailAddress,
+       PrimaryContactPerson =parent.PrimaryContactPerson,
+        PrimaryContactPersonPhoneNumber=parent.PrimaryContactPersonPhoneNumber,
+        SecondaryContactPerson= parent.SecondaryContactPerson,
+                SecondaryContactPersonPhoneNumber =parent.SecondaryContactPersonPhoneNumber
+    };*/
+           
+             context.parent.Add(parent);
+             context.SaveChanges();
+            
+           
         }
 
        //read 
         public IEnumerable<Parent> GetAllParents()
         {
-           return context.parents;
+           return context.parent;
         }
 
         public async Task<IEnumerable<Parent>> GetAllParentsAsync()
         {
-            var parents = await context.parents.ToListAsync<Parent>();
+            var parents = await context.parent.ToListAsync<Parent>();
             return parents;
 
         }
 
         public Parent GetParentByRegistrationId(int registrationId)
         {
-            return context.parents.SingleOrDefault(s => s.RegistationId == registrationId);
+            return context.parent.SingleOrDefault(s => s.RegistationId == registrationId);
         }
 
         public async Task<Parent> GetParentByRegistrationIdAsync(int registrationId)
         {
-            var parentById = await context.parents.SingleOrDefaultAsync(s => s.RegistationId == registrationId);
+            var parentById = await context.parent.SingleOrDefaultAsync(s => s.RegistationId == registrationId);
             return parentById;
 
         }
 
         public void UpdateParent(Parent parent)
         {
-            context.parents.Update(parent);
+            context.parent.Update(parent);
         }
         public void DeleteParentByID(int parentId)
         {
             var x = GetParentByRegistrationId(parentId);
-            context.parents.Remove(x);
+            context.parent.Remove(x);
         }
 
     }

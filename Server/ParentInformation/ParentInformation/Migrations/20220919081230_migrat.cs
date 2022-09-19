@@ -2,12 +2,12 @@
 
 namespace ParentInformation.Migrations
 {
-    public partial class migrate : Migration
+    public partial class migrat : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "parents",
+                name: "parent",
                 columns: table => new
                 {
                     RegistationId = table.Column<int>(nullable: false)
@@ -28,14 +28,14 @@ namespace ParentInformation.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_parents", x => x.RegistationId);
+                    table.PrimaryKey("PK_parent", x => x.RegistationId);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "parents");
+                name: "parent");
         }
     }
 }
