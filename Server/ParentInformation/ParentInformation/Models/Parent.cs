@@ -29,11 +29,11 @@ namespace ParentInformation.Models
         public string EmailAddress { get; set; }
         [Required]
         public string PrimaryContactPerson { get; set; }
-        [Phone]
+        [Required]
         public long PrimaryContactPersonPhoneNumber { get; set; }
         [Required]
         public string SecondaryContactPerson { get; set; }
-        [Phone]
+        [Required]
         public long SecondaryContactPersonPhoneNumber { get; set; }
     }
 }
