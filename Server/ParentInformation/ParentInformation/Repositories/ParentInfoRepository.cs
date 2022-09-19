@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Newtonsoft.Json;
 using ParentInformation.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -58,14 +59,14 @@ namespace ParentInformation.Repositories
 
         }
 
-        public Parent GetParentByRegistrationId(int registrationId)
+        public Parent GetParentByRegistrationId(Guid registrationId)
         {
             return context.parent.SingleOrDefault(s => s.RegistationId == registrationId);
         }
 
-        public async Task<Parent> GetParentByRegistrationIdAsync(int registrationId)
+        public async Task<Parent> GetParentByRegistrationIdAsync(Guid RegistrationId)
         {
-            var parentById = await context.parent.SingleOrDefaultAsync(s => s.RegistationId == registrationId);
+            var parentById = await context.parent.SingleOrDefaultAsync(s => s.RegistationId == RegistrationId);
             return parentById;
 
         }
@@ -74,11 +75,10 @@ namespace ParentInformation.Repositories
         {
             context.parent.Update(parent);
         }
-        public void DeleteParentByID(int parentId)
+        public void DeleteParentByID(Guid parentId)
         {
             var x = GetParentByRegistrationId(parentId);
             context.parent.Remove(x);
         }
-
     }
 }

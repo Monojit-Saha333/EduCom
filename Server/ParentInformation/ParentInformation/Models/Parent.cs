@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ParentInformation.Models
@@ -8,7 +9,7 @@ namespace ParentInformation.Models
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public int RegistationId { get; set; }
+        public  Guid RegistationId { get; set; }
         [Required]
         public string ParentName { get; set; }
         [Required]
