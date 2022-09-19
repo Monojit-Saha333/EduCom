@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ParentInformation.Migrations
 {
-    public partial class migrat : Migration
+    public partial class mig : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -10,8 +11,7 @@ namespace ParentInformation.Migrations
                 name: "parent",
                 columns: table => new
                 {
-                    RegistationId = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    RegistationId = table.Column<Guid>(nullable: false),
                     ParentName = table.Column<string>(nullable: false),
                     StudentRegistrationId = table.Column<string>(nullable: false),
                     StudentName = table.Column<string>(nullable: false),
