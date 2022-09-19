@@ -4,7 +4,7 @@ namespace ParentInformation.Models
 {
     public class ParentContext:DbContext
     {
-        ParentContext(DbContextOptions<ParentContext> options ):base(options)
+        public ParentContext(DbContextOptions<ParentContext> options ):base(options)
         {
 
         }

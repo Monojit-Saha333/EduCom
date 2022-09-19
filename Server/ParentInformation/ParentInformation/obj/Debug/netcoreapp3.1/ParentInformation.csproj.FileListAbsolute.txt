@@ -58,3 +58,8 @@ C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication
 C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication\Server\ParentInformation\ParentInformation\obj\Debug\netcoreapp3.1\ParentInformation.dll
 C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication\Server\ParentInformation\ParentInformation\obj\Debug\netcoreapp3.1\ParentInformation.pdb
 C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication\Server\ParentInformation\ParentInformation\obj\Debug\netcoreapp3.1\ParentInformation.genruntimeconfig.cache
+C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\2116787\OneDrive - Cognizant\Desktop\Training-Project\ParentApplication\Server\ParentInformation\ParentInformation\obj\Debug\netcoreapp3.1\ParentInformation.MvcApplicationPartsAssemblyInfo.cs

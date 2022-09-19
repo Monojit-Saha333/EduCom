@@ -12,6 +12,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Swashbuckle;
+using ParentInformation.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ParentInformation
 {
@@ -28,7 +30,8 @@ namespace ParentInformation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddScoped<IParentInfoRepository, ParentInfoRepository>();
+            services.AddTransient<IParentInfoRepository, ParentInfoRepository>();
+            services.AddDbContext<ParentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
             services.AddSwaggerGen();
         }
 

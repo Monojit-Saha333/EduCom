@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore;
 using ParentInformation.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,46 +9,54 @@ namespace ParentInformation.Repositories
 {
     public class ParentInfoRepository : IParentInfoRepository
     {
-        private readonly ParentContext dbcontext;
+        private readonly ParentContext context;
 
         public ParentInfoRepository(ParentContext dbcontext)
         {
-            this.dbcontext = dbcontext;
+            this.context = dbcontext;
         }
-
+        //create command
         public void CreateParent(Parent parent)
         {
+            if(parent==null)
             throw new System.NotImplementedException();
+            context.parents.Add(parent);
         }
 
-        public void DeleteParentByID(int parentId)
-        {
-            throw new System.NotImplementedException();
-        }
-
+       //read 
         public IEnumerable<Parent> GetAllParents()
         {
-            throw new System.NotImplementedException();
+           return context.parents;
         }
 
-        public Task<IEnumerable<Parent>> GetAllParentsAsync()
+        public async Task<IEnumerable<Parent>> GetAllParentsAsync()
         {
-            throw new System.NotImplementedException();
+            var parents = await context.parents.ToListAsync<Parent>();
+            return parents;
+
         }
 
         public Parent GetParentByRegistrationId(int registrationId)
         {
-            throw new System.NotImplementedException();
+            return context.parents.SingleOrDefault(s => s.RegistationId == registrationId);
         }
 
-        public Task<Parent> GetParentByRegistrationIdAsync(int registrationId)
+        public async Task<Parent> GetParentByRegistrationIdAsync(int registrationId)
         {
-            throw new System.NotImplementedException();
+            var parentById = await context.parents.SingleOrDefaultAsync(s => s.RegistationId == registrationId);
+            return parentById;
+
         }
 
         public void UpdateParent(Parent parent)
         {
-            throw new System.NotImplementedException();
+            context.parents.Update(parent);
         }
+        public void DeleteParentByID(int parentId)
+        {
+            var x = GetParentByRegistrationId(parentId);
+            context.parents.Remove(x);
+        }
+
     }
 }
