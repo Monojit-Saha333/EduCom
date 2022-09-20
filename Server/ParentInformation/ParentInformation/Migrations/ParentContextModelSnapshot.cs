@@ -29,6 +29,9 @@ namespace ParentInformation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
                     b.Property<string>("City")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -48,15 +51,20 @@ namespace ParentInformation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("PrimaryContactPersonPhoneNumber")
-                        .HasColumnType("bigint");
+                    b.Property<string>("PrimaryContactPersonPhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RegistrationDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("SecondaryContactPerson")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("SecondaryContactPersonPhoneNumber")
-                        .HasColumnType("bigint");
+                    b.Property<string>("SecondaryContactPersonPhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("State")
                         .IsRequired()
@@ -70,8 +78,9 @@ namespace ParentInformation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("Zipcode")
-                        .HasColumnType("bigint");
+                    b.Property<string>("Zipcode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("RegistationId");
 
