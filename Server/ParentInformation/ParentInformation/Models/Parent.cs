@@ -26,16 +26,23 @@ namespace ParentInformation.Models
         public string City { get; set; }
 
         [Required]
-        public long Zipcode { get; set; }
+        public string Zipcode { get; set; }
         [EmailAddress]
         public string EmailAddress { get; set; }
         [Required]
         public string PrimaryContactPerson { get; set; }
         [Required]
-        public long PrimaryContactPersonPhoneNumber { get; set; }
+        public string PrimaryContactPersonPhoneNumber { get; set; }
         [Required]
         public string SecondaryContactPerson { get; set; }
         [Required]
-        public long SecondaryContactPersonPhoneNumber { get; set; }
+        public string SecondaryContactPersonPhoneNumber { get; set; }
+
+        [Required]
+        public int Age { get; set; }
+
+        [Required]
+        public DateTime RegistrationDate { get; set; }
+       
     }
 }
