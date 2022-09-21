@@ -22,29 +22,20 @@ namespace ParentInformation.Repositories
         //create command
         public void CreateParent(Parent parent)
         {
-           /* Parent parent1 = new Parent()
-            {
-                StudentRegistrationId = parent.StudentRegistrationId,
-                RegistationId = parent.RegistationId,
-                ParentName = parent.ParentName,
-                StudentName = parent.StudentName,
-                Address = parent.Address,
-                State = parent.State,
-                Country = parent.Country,
-                City = parent.City,
-                Zipcode = parent.Zipcode,
-            EmailAddress = parent.EmailAddress,
-       PrimaryContactPerson =parent.PrimaryContactPerson,
-        PrimaryContactPersonPhoneNumber=parent.PrimaryContactPersonPhoneNumber,
-        SecondaryContactPerson= parent.SecondaryContactPerson,
-                SecondaryContactPersonPhoneNumber =parent.SecondaryContactPersonPhoneNumber
-    };*/
-           
-             context.parent.Add(parent);
-             context.SaveChanges();
-            
-           
+            parent.status = "submitted";
+            context.parent.Add(parent);
+            context.SaveChanges();
+
         }
+
+        public ResponseModel getResponse(Parent parent)
+        {
+            ResponseModel responseModel = new ResponseModel();
+            //parent.status = "success";
+            responseModel.RegistrationId = parent.RegistationId;
+            responseModel.status = parent.status;
+            return responseModel;
+           }
 
        //read 
         public IEnumerable<Parent> GetAllParents()
@@ -74,11 +65,13 @@ namespace ParentInformation.Repositories
         public void UpdateParent(Parent parent)
         {
             context.parent.Update(parent);
+            context.SaveChanges();
         }
         public void DeleteParentByID(Guid parentId)
         {
             var x = GetParentByRegistrationId(parentId);
             context.parent.Remove(x);
+            context.SaveChanges();
         }
     }
 }
