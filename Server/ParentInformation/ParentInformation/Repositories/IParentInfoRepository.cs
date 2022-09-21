@@ -20,5 +20,6 @@ namespace ParentInformation.Repositories
         public void UpdateParent(Parent parent);
         //delete
         public void DeleteParentByID(Guid parentId);
+        public ResponseModel getResponse(Parent parent);
     }
 }

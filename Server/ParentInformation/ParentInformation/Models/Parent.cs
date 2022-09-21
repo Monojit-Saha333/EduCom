@@ -9,7 +9,7 @@ namespace ParentInformation.Models
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
-        public  Guid RegistationId { get; set; }
+        public Guid RegistationId { get; set; }
         [Required]
         public string ParentName { get; set; }
         [Required]
@@ -43,6 +43,7 @@ namespace ParentInformation.Models
 
         [Required]
         public DateTime RegistrationDate { get; set; }
-       
+        public string status { get; set; }
+
     }
 }
