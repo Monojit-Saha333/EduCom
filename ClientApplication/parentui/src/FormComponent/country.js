@@ -1,0 +1,1 @@
+export const countries = [{ countrycode: 'IN', countryname: 'India', states: ['West Bengal', 'Delhi', 'Uttar Pradesh'] },{countrycode: 'PAK', countryname: 'Pakistan', states: ['Lahore', 'Islamabad', 'Karachi']}]
