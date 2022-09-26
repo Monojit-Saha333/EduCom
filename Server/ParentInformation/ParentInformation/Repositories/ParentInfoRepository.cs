@@ -40,7 +40,9 @@ namespace ParentInformation.Repositories
        //read 
         public IEnumerable<Parent> GetAllParents()
         {
-           return context.parent;
+            var allparents = context.parent;
+
+            return allparents;
         }
 
         public async Task<IEnumerable<Parent>> GetAllParentsAsync()
@@ -64,6 +66,7 @@ namespace ParentInformation.Repositories
 
         public void UpdateParent(Parent parent)
         {
+            //var parenttobeupdated=GetParentByRegistrationId(parent.RegistationId);
             context.parent.Update(parent);
             context.SaveChanges();
         }
