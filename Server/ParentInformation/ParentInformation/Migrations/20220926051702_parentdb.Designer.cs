@@ -10,8 +10,8 @@ using ParentInformation.Models;
 namespace ParentInformation.Migrations
 {
     [DbContext(typeof(ParentContext))]
-    [Migration("20220921104051_ParentDb")]
-    partial class ParentDb
+    [Migration("20220926051702_parentdb")]
+    partial class parentdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
