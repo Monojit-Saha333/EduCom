@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using ParentInformation.DTOs;
 using ParentInformation.Models;
 using ParentInformation.Repositories;
 using System;
@@ -11,15 +13,21 @@ namespace ParentInformation.Controllers
     public class ParentsController : ControllerBase
     {
         private readonly IParentInfoRepository _parentInfoRepository;
-        public ParentsController(IParentInfoRepository parentInfoRepository)
+
+        public IMapper _mapper { get; }
+
+        public ParentsController(IParentInfoRepository parentInfoRepository, IMapper mapper)
         {
-            this._parentInfoRepository = parentInfoRepository; 
+            this._parentInfoRepository = parentInfoRepository;
+            _mapper = mapper;
         }
         [HttpPost]
-        public IActionResult Create(Parent parent)
+        public IActionResult Create(ParentDTO parentDTO)
         {
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);
+
+            Parent parent = _mapper.Map<Parent>(parentDTO);
             _parentInfoRepository.CreateParent(parent);
             var res=_parentInfoRepository.getResponse(parent);
             return Ok(res);
