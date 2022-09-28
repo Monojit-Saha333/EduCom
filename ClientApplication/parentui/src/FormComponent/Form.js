@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import { countries } from './country'
+import axios from 'axios';
 
+function PostUserData(userData) {
+    axios.post('https://localhost:44309/Parents', userData).then((response) => console.log(response))
+
+}
 function ParentForm() {
-    const [formValue, setFormValue] = useState({ name: "", parentname: "", studentregistrationnumber: "", address: "", state: "", country: "IN", city: "", zipcode: "", email: "", primarycontactpersonname: "", primarycontactpersonnumber: "", secondarycontactpersonname: "", secondarycontactpersonnumber: "", age: 0 })
+
+    const [formValue, setFormValue] = useState({ studentname: "", parentname: "", studentregistrationnumber: "", address: "", state: "", country: "IN", city: "", zipcode: "", email: "", primarycontactpersonname: "", primarycontactpersonnumber: "", secondarycontactpersonname: "", secondarycontactpersonnumber: "", age: 0 })
+    const [userData, setuserData] = useState(null);
     const states = countries.find(country => country.countrycode === formValue.country).states;
     console.log(states)
     const handleSubmit = (e) => {
         e.preventDefault()
+        PostUserData(formValue)
         console.log(formValue)
     }
 
@@ -65,10 +73,16 @@ function ParentForm() {
 
     };
 
+    useEffect(() => {
+        axios.get('https://localhost:44309/Parents').then((response) => setuserData(response.data))
+
+
+    }, [])
+
 
     return (
         <div className="ParentForm">
-
+            {JSON.stringify(userData)}
             <form onSubmit={handleSubmit}>
                 <label>
                     StudentName:
@@ -83,7 +97,7 @@ function ParentForm() {
                 <br></br>
                 <label>
                     StudentRegistrationNumber:
-                    <input type="text" name="studentregistrationnumber" required="on" onChange={(e) => setFormValue({ ...formValue, studentregistrationnumber: e.target.value })} value={formValue.studentregistrationnumber} />
+                    <input type="number" name="studentregistrationnumber" required="on" onChange={(e) => setFormValue({ ...formValue, studentregistrationnumber: e.target.value })} value={formValue.studentregistrationnumber} />
                 </label>
                 <br></br>
                 <label>
@@ -104,7 +118,7 @@ function ParentForm() {
                 <label></label>
                 <label for="states">States</label>
 
-                <select name="states" id="states" required="on" onChange={(e) => setFormValue({ ...formValue, state: e.target.value })}>
+                <select name="states" required="on" onChange={(e) => setFormValue({ ...formValue, state: e.target.value })}>
                     {
                         states.map((state) => <option key={state} value={state}>{state} </option>)
                     }
@@ -150,11 +164,11 @@ function ParentForm() {
                 </label><br></br>
                 <label>
                     Age:
-                    <input type="number" min="4" required="on" name="age" required="on" onChange={(e) => setFormValue({ ...formValue, age: e.target.value })} value={formValue.age} />
+                    <input type="number" min="4" required="on" name="age" required="on" onChange={(e) => setFormValue({ ...formValue, age: parseInt(e.target.value)})} value={formValue.age} />
                 </label><br></br>
                 <label>
                     Registration Date:
-                    <input type="date" required="on" name="registrationdate" required="on" onChange={(e) => setFormValue({ ...formValue, age: e.target.value })} value={formValue.registrationdate} />
+                    <input type="date" required="on" name="registrationdate" required="on" onChange={(e) => setFormValue({ ...formValue, age: e.target.valueAsDate })} value={formValue.registrationdate} />
                 </label><br></br>
                 <input type="submit" value="Submit" />
 
