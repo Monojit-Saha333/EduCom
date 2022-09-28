@@ -1,10 +1,11 @@
 ﻿using FluentValidation;
+using ParentInformation.DTOs;
 using ParentInformation.Models;
 using System;
 
 namespace ParentInformation.Validation
 {
-    public class ParentValidator : AbstractValidator<Parent>
+    public class ParentValidator : AbstractValidator<ParentDTO>
     {
         public ParentValidator()
         {
