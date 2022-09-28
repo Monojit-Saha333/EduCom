@@ -70,9 +70,9 @@ namespace ParentInformation.Validation
                 .NotEmpty().WithMessage("Required");
 
 
-            RuleFor(x => x.RegistrationDate)
+           /* RuleFor(x => x.RegistrationDate)
                 .NotEmpty().WithMessage("Required")
-                .GreaterThanOrEqualTo(DateTime.Now.Date).WithMessage("Registration Date should not be lesser than system date.");
+                .GreaterThanOrEqualTo(DateTime.Now.Date).WithMessage("Registration Date should not be lesser than system date.");*/
 
 
 
