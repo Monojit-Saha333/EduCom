@@ -41,9 +41,18 @@ namespace ParentInformation.Models
         [Required]
         public int Age { get; set; }
 
-        [Required]
-        public DateTime RegistrationDate { get; set; }
+        //[Required]
+       // public DateTime RegistrationDate { get; set; }
         public string status { get; set; }
+        private DateTime registrationDate;
+        public DateTime RegistrationDate
+        {
+            get { return registrationDate; }
+            set
+            {
+                value = DateTime.Now.Date;
+            }
+        }
 
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ParentInformation.Migrations
 {
-    public partial class mig : Migration
+    public partial class ParentDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -26,8 +26,8 @@ namespace ParentInformation.Migrations
                     SecondaryContactPerson = table.Column<string>(nullable: false),
                     SecondaryContactPersonPhoneNumber = table.Column<string>(nullable: false),
                     Age = table.Column<int>(nullable: false),
-                    RegistrationDate = table.Column<DateTime>(nullable: false),
-                    status = table.Column<string>(nullable: true)
+                    status = table.Column<string>(nullable: true),
+                    RegistrationDate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {

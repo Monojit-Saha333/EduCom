@@ -37,8 +37,10 @@ namespace ParentInformation.DTOs
         [Required]
         public int Age { get; set; }
 
-        [Required]
-        public DateTime RegistrationDate { get; set; }
+        /// <summary>
+        /// [Required]
+        /// </summary>
+        //public DateTime RegistrationDate { get; set; }
         
     }
 }
