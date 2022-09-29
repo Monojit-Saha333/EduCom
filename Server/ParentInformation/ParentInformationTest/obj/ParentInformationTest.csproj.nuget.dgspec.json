@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj": {}
+    "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj": {
+    "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj",
         "projectName": "ParentInformationTest",
-        "projectPath": "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj",
-        "packagesPath": "C:\\Users\\2116645\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformationTest\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformationTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\2116645\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj": {
-                "projectPath": "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj"
+              "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj": {
+                "projectPath": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj"
               }
             }
           }
@@ -84,8 +79,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -94,25 +88,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj": {
+    "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
+        "projectUniqueName": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
         "projectName": "ParentInformation",
-        "projectPath": "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
-        "packagesPath": "C:\\Users\\2116645\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformation\\obj\\",
+        "projectPath": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\2116645\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,7 +110,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -204,8 +193,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -217,7 +205,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
