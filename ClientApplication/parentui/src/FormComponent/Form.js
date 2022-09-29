@@ -5,11 +5,17 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
+import { useHistory, useNavigate } from "react-router-dom";
 
-function PostUserData(userData) {
-  axios
+function PostUserData(userData, navigate) {
+  return axios
     .post("https://localhost:44309/Parents", userData)
-    .then((response) => console.log(response));
+    .then((response) => {
+      alert(
+        `your account has been created with Id ${response.data.registrationId}`
+      );
+      navigate("/");
+    });
 }
 
 function ParentForm() {
@@ -27,16 +33,17 @@ function ParentForm() {
     primaryContactPersonPhoneNumber: "",
     secondaryContactPerson: "",
     secondaryContactPersonPhoneNumber: "",
-    age: 0
+    age: 0,
   });
   const [userData, setuserData] = useState(null);
+  const navigate = useNavigate();
   const states = countries.find(
     (country) => country.countrycode === formValue.country
   ).states;
   console.log(states);
   const handleSubmit = (e) => {
     e.preventDefault();
-    PostUserData(formValue);
+    PostUserData(formValue, navigate);
     console.log(formValue);
   };
 
@@ -87,7 +94,10 @@ function ParentForm() {
     if (!elm.value.match(phoneNumberRegex)) return;
 
     if (elm.value.length > phoneNumberMaxLength) return;
-    setFormValue({ ...formValue, secondaryContactPersonPhoneNumber: elm.value });
+    setFormValue({
+      ...formValue,
+      secondaryContactPersonPhoneNumber: elm.value,
+    });
   };
 
   return (
@@ -323,7 +333,7 @@ function ParentForm() {
             />
           </Col>
         </Form.Group>
-        
+
         <Button type="submit" value="submit">
           submit
         </Button>
