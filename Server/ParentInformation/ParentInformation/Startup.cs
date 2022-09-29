@@ -36,9 +36,25 @@ namespace ParentInformation
             services.AddControllers()
          .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentValidator>());
             services.AddTransient<IParentInfoRepository, ParentInfoRepository>();
-            services.AddDbContext<ParentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
+            services.AddDbContext<ParentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection1")));
             services.AddSwaggerGen();
+
+            var provider = services.BuildServiceProvider();
+            var configuration=provider.GetRequiredService<IConfiguration>();    
+            services.AddCors(options =>
+            {
+                var frontendURL = configuration.GetValue<string>("frontend_url");
+                options.AddDefaultPolicy(services =>
+                {
+                    services.WithOrigins(frontendURL).AllowAnyMethod().AllowAnyHeader();
+                });
+            });
         }
+
+        
+
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -50,6 +66,7 @@ namespace ParentInformation
             app.UseSwagger();
             app.UseSwaggerUI();
             app.UseHttpsRedirection();
+            app.UseCors();
 
             app.UseRouting();
 
