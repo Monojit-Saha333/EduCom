@@ -2,6 +2,7 @@
 using ParentInformation.DTOs;
 using ParentInformation.Models;
 using System;
+using System.Reflection.Metadata;
 
 namespace ParentInformation.Validation
 {
@@ -11,10 +12,7 @@ namespace ParentInformation.Validation
         {
             RuleFor(x => x.StudentName).NotEmpty();
             RuleFor(x => x.StudentName).Matches("[a-zA-Z\\s]");
-            /*RuleFor(x => x.StudentName)
-                .NotNull()
-                .NotEmpty().WithMessage("Required")
-                .Matches("(/^[a-zA-Z]+ ?([a-zA-Z]+$){1}/)").WithMessage("{PropertyName} must contain only alphabets and space.");*/
+       
 
             RuleFor(x => x.ParentName)
                 .NotNull()
@@ -33,12 +31,12 @@ namespace ParentInformation.Validation
             RuleFor(x => x.PrimaryContactPersonPhoneNumber)
                 .NotEmpty().WithMessage("Required")
                 .NotNull()
-                .Matches("[789]{1}[0-9]{9}").WithMessage("{PropertyName} must contain only 10 digits.");
+                .Matches("[6789]{1}[0-9]{9}").WithMessage("{PropertyName} must contain only 10 digits.");
 
             RuleFor(x => x.SecondaryContactPersonPhoneNumber)
                 .NotEmpty().WithMessage("Required")
                 .NotNull()
-                .Matches("[789]{1}[0-9]{9}").WithMessage("{PropertyName} must contain only 10 digits.");
+                .Matches("[6789]{1}[0-9]{9}").WithMessage("{PropertyName} must contain only 10 digits.");
 
             RuleFor(x => x.EmailAddress)
                 .NotNull()
@@ -70,9 +68,9 @@ namespace ParentInformation.Validation
                 .NotEmpty().WithMessage("Required");
 
 
-           /* RuleFor(x => x.RegistrationDate)
-                .NotEmpty().WithMessage("Required")
-                .GreaterThanOrEqualTo(DateTime.Now.Date).WithMessage("Registration Date should not be lesser than system date.");*/
+           /* RuleFor(x => x.StudentRegistrationId)
+                 .NotEmpty().WithMessage("Required")
+                 .Matches("^R[0-9]{7}").WithMessage("Registration Number must start with R"); */
 
 
 
