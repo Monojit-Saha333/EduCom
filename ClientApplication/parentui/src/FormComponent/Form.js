@@ -115,10 +115,7 @@ function ParentForm() {
     if (!elm.value.match(phoneNumberRegex)) return;
 
     if (elm.value.length > phoneNumberMaxLength) return;
-    setFormValue({
-      ...formValue,
-      secondaryContactPersonPhoneNumber: elm.value,
-    });
+    setFormValue({ ...formValue,secondaryContactPersonPhoneNumber: elm.value });
   };
 
   return (
@@ -318,7 +315,7 @@ function ParentForm() {
           <Col sm="10">
             <Form.Control
               type="text"
-              value={formValue.secondaryContactPersonPhoneNumbernp}
+              value={formValue.secondaryContactPersonPhoneNumber}
               required="on"
               onChange={handleChangeSecondaryPhoneNumber}
             />
