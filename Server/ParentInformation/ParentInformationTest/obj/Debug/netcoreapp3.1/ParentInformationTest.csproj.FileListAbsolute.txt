@@ -318,3 +318,11 @@ C:\Users\2116645\Downloads\ParentStudentApp\Server\ParentInformation\ParentInfor
 C:\Users\2116645\Downloads\ParentStudentApp\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.dll
 C:\Users\2116645\Downloads\ParentStudentApp\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.pdb
 C:\Users\2116645\Downloads\ParentStudentApp\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.genruntimeconfig.cache
+C:\Users\2116645\Downloads\ParentStudentAppFinalCopy\ParentApplication\Server\ParentInformation\ParentInformationTest\bin\Debug\netcoreapp3.1\CoverletSourceRootsMapping
+C:\Users\2116645\Downloads\ParentStudentAppFinalCopy\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.csproj.AssemblyReference.cache
+C:\Users\2116645\Downloads\ParentStudentAppFinalCopy\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2116645\Downloads\ParentStudentAppFinalCopy\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.AssemblyInfoInputs.cache
+C:\Users\2116645\Downloads\ParentStudentAppFinalCopy\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.AssemblyInfo.cs
+C:\Users\2116645\Downloads\ParentStudentAppFinalCopy\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.csproj.CoreCompileInputs.cache
+C:\Users\2116645\Downloads\ParentStudentAppFinalCopy\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.dll
+C:\Users\2116645\Downloads\ParentStudentAppFinalCopy\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.pdb
