@@ -5,8 +5,9 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
-import { useHistory, useNavigate } from "react-router-dom";
-import './Form.css';
+import { useNavigate } from "react-router-dom";
+import "./Form.css";
+import RegistrationmodalComponent from "../RegistrationModalComponent/RegistrationModal";
 
 function PostUserData(userData, navigate) {
   return axios
@@ -15,6 +16,7 @@ function PostUserData(userData, navigate) {
       alert(
         `your account has been created with Id ${response.data.registrationId}`
       );
+
       navigate("/");
     });
 }
@@ -63,19 +65,19 @@ function ParentForm() {
     }
   };
   const handleStudentRegistrationId = (e) => {
-    if(e.target.value==="")
-    setFormValue({ ...formValue, studentRegistrationId: e.target.value });
+    if (e.target.value === "")
+      setFormValue({ ...formValue, studentRegistrationId: e.target.value });
     if (e.target.value.match(/^R/)) {
       setFormValue({ ...formValue, studentRegistrationId: e.target.value });
     }
   };
-  
+
   const handleChangeSecondaryName = (e) => {
     if (e.target.value.match("^[a-zA-Z ]*$") != null) {
       setFormValue({ ...formValue, secondaryContactPerson: e.target.value });
     }
   };
-  
+
   const handleChangeParentName = (e) => {
     if (e.target.value.match("^[a-zA-Z ]*$") != null) {
       setFormValue({ ...formValue, parentName: e.target.value });
@@ -124,6 +126,7 @@ function ParentForm() {
   return (
     <div className="ParentForm">
       <h1>Parent Form</h1>
+      <hr></hr>
       <Form onSubmit={handleSubmit}>
         {/* student name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
@@ -166,9 +169,7 @@ function ParentForm() {
               name="studentRegistrationId"
               required="on"
               value={formValue.studentRegistrationId}
-              onChange={handleStudentRegistrationId
-              }
-              
+              onChange={handleStudentRegistrationId}
             />
           </Col>
         </Form.Group>
@@ -206,7 +207,9 @@ function ParentForm() {
         <Row className="mb-3">
           {/* Country */}
           <Form.Group as={Col} controlId="formPlaintextCountry">
-            <Form.Label>Country <sup>*</sup></Form.Label>
+            <Form.Label>
+              Country <sup>*</sup>
+            </Form.Label>
             <Form.Select
               name="country"
               id="country"
@@ -222,7 +225,9 @@ function ParentForm() {
           </Form.Group>
           {/* state */}
           <Form.Group as={Col} controlId="formPlaintextState">
-            <Form.Label>State <sup>*</sup></Form.Label>
+            <Form.Label>
+              State <sup>*</sup>
+            </Form.Label>
 
             <Form.Select
               name="states"
@@ -241,7 +246,9 @@ function ParentForm() {
           </Form.Group>
           {/* Zipcode */}
           <Form.Group as={Col} controlId="formPlaintextZipCode">
-            <Form.Label>Zipcode <sup>*</sup></Form.Label>
+            <Form.Label>
+              Zipcode <sup>*</sup>
+            </Form.Label>
 
             <Form.Control
               type="text"
@@ -279,7 +286,7 @@ function ParentForm() {
               type="text"
               name="primaryContactPerson"
               required="on"
-              onChange={handleChangePrimaryName }
+              onChange={handleChangePrimaryName}
               value={formValue.primaryContactPerson}
             />
           </Col>
@@ -313,12 +320,12 @@ function ParentForm() {
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-           Phone Number <sup>*</sup>
+            Phone Number <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
               type="text"
-              value={formValue.secondaryContactPersonPhoneNumbernp}
+              value={formValue.secondaryContactPersonPhoneNumber}
               required="on"
               onChange={handleChangeSecondaryPhoneNumber}
             />
@@ -341,10 +348,10 @@ function ParentForm() {
             />
           </Col>
         </Form.Group>
-
-        <Button type="submit" value="submit">
-          Submit
-        </Button>
+        <hr></hr>
+        <div id="submit">
+          <Button variant="primary">Submit</Button>
+        </div>
       </Form>
     </div>
   );
