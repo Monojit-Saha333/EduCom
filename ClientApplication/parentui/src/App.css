@@ -1,10 +1,7 @@
 body{
-  background-image: linear-gradient(#20BF55,
-  #01BAEF);
+  background-color: lightblue;
 }
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;

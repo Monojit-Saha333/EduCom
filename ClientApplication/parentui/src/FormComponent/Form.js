@@ -5,11 +5,18 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
+import { useHistory, useNavigate } from "react-router-dom";
+import './Form.css';
 
-function PostUserData(userData) {
-  axios
+function PostUserData(userData, navigate) {
+  return axios
     .post("https://localhost:44309/Parents", userData)
-    .then((response) => console.log(response));
+    .then((response) => {
+      alert(
+        `your account has been created with Id ${response.data.registrationId}`
+      );
+      navigate("/");
+    });
 }
 
 function ParentForm() {
@@ -27,16 +34,18 @@ function ParentForm() {
     primaryContactPersonPhoneNumber: "",
     secondaryContactPerson: "",
     secondaryContactPersonPhoneNumber: "",
-    age: 0
+    age: 0,
   });
+  //const[registrationvalue,setregistrationvalue]=useState();
   const [userData, setuserData] = useState(null);
+  const navigate = useNavigate();
   const states = countries.find(
     (country) => country.countrycode === formValue.country
   ).states;
   console.log(states);
   const handleSubmit = (e) => {
     e.preventDefault();
-    PostUserData(formValue);
+    PostUserData(formValue, navigate);
     console.log(formValue);
   };
 
@@ -48,6 +57,25 @@ function ParentForm() {
       setFormValue({ ...formValue, studentName: e.target.value });
     }
   };
+  const handleChangePrimaryName = (e) => {
+    if (e.target.value.match("^[a-zA-Z ]*$") != null) {
+      setFormValue({ ...formValue, primaryContactPerson: e.target.value });
+    }
+  };
+  const handleStudentRegistrationId = (e) => {
+    if(e.target.value==="")
+    setFormValue({ ...formValue, studentRegistrationId: e.target.value });
+    if (e.target.value.match(/^R/)) {
+      setFormValue({ ...formValue, studentRegistrationId: e.target.value });
+    }
+  };
+  
+  const handleChangeSecondaryName = (e) => {
+    if (e.target.value.match("^[a-zA-Z ]*$") != null) {
+      setFormValue({ ...formValue, secondaryContactPerson: e.target.value });
+    }
+  };
+  
   const handleChangeParentName = (e) => {
     if (e.target.value.match("^[a-zA-Z ]*$") != null) {
       setFormValue({ ...formValue, parentName: e.target.value });
@@ -87,7 +115,10 @@ function ParentForm() {
     if (!elm.value.match(phoneNumberRegex)) return;
 
     if (elm.value.length > phoneNumberMaxLength) return;
-    setFormValue({ ...formValue, secondaryContactPersonPhoneNumber: elm.value });
+    setFormValue({
+      ...formValue,
+      secondaryContactPersonPhoneNumber: elm.value,
+    });
   };
 
   return (
@@ -97,7 +128,7 @@ function ParentForm() {
         {/* student name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Student Name
+            Student Name <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
@@ -112,7 +143,7 @@ function ParentForm() {
         {/* Parent Name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Parent Name
+            Parent Name <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
@@ -127,20 +158,17 @@ function ParentForm() {
         {/* Student Registration number */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Student Registration Number:
+            Student Register Number <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
               type="text"
               name="studentRegistrationId"
               required="on"
-              onChange={(e) =>
-                setFormValue({
-                  ...formValue,
-                  studentRegistrationId: e.target.value,
-                })
-              }
               value={formValue.studentRegistrationId}
+              onChange={handleStudentRegistrationId
+              }
+              
             />
           </Col>
         </Form.Group>
@@ -148,7 +176,7 @@ function ParentForm() {
           {/* Address */}
           <Form.Group as={Col} controlId="formPlaintextPassword">
             <Form.Label column sm="2">
-              Address:
+              Address <sup>*</sup>
             </Form.Label>
             <Form.Control
               type="text"
@@ -163,7 +191,7 @@ function ParentForm() {
           {/* City */}
           <Form.Group as={Col} controlId="formPlaintextPassword">
             <Form.Label column sm="2">
-              City
+              City <sup>*</sup>
             </Form.Label>
             <Form.Control
               type="text"
@@ -178,7 +206,7 @@ function ParentForm() {
         <Row className="mb-3">
           {/* Country */}
           <Form.Group as={Col} controlId="formPlaintextCountry">
-            <Form.Label>Country</Form.Label>
+            <Form.Label>Country <sup>*</sup></Form.Label>
             <Form.Select
               name="country"
               id="country"
@@ -194,7 +222,7 @@ function ParentForm() {
           </Form.Group>
           {/* state */}
           <Form.Group as={Col} controlId="formPlaintextState">
-            <Form.Label>State</Form.Label>
+            <Form.Label>State <sup>*</sup></Form.Label>
 
             <Form.Select
               name="states"
@@ -213,7 +241,7 @@ function ParentForm() {
           </Form.Group>
           {/* Zipcode */}
           <Form.Group as={Col} controlId="formPlaintextZipCode">
-            <Form.Label>Zipcode:</Form.Label>
+            <Form.Label>Zipcode <sup>*</sup></Form.Label>
 
             <Form.Control
               type="text"
@@ -226,7 +254,7 @@ function ParentForm() {
         {/* Email */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Email:
+            Email <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
@@ -244,26 +272,21 @@ function ParentForm() {
         {/*   Primary Contact Person Name:*/}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Primary Contact Person Name:
+            Primary Contact Person <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
               type="text"
               name="primaryContactPerson"
               required="on"
-              onChange={(e) =>
-                setFormValue({
-                  ...formValue,
-                  primaryContactPerson: e.target.value,
-                })
-              }
+              onChange={handleChangePrimaryName }
               value={formValue.primaryContactPerson}
             />
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Primary Contact Person Number:
+            Phone Number <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
@@ -276,26 +299,21 @@ function ParentForm() {
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Secondary Contact Person Name
+            Secondary Contact Person <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
               type="text"
               name="secondaryContactPerson"
               required="on"
-              onChange={(e) =>
-                setFormValue({
-                  ...formValue,
-                  secondaryContactPerson: e.target.value,
-                })
-              }
+              onChange={handleChangeSecondaryName}
               value={formValue.secondaryContactPerson}
             />
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Secondary Contact Person Number:
+           Phone Number <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
@@ -308,7 +326,7 @@ function ParentForm() {
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column sm="2">
-            Age:
+            Age <sup>*</sup>
           </Form.Label>
           <Col sm="10">
             <Form.Control
@@ -323,9 +341,9 @@ function ParentForm() {
             />
           </Col>
         </Form.Group>
-        
+
         <Button type="submit" value="submit">
-          submit
+          Submit
         </Button>
       </Form>
     </div>

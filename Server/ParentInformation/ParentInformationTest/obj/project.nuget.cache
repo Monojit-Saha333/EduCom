@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TPQLH2/Wvg19AmjKJkQdhBE3seLo6/SOJfjOb2JMFOzUvdU85gregeTQvJTWwBugR7IwQG9DutDro/0F9fbyoA==",
+  "dgSpecHash": "SW+gIiQdPTvDeLahQ/RcDIkd69MLUnI2HM9s+8tYBsNDFKV80TL/XKSS4XYqH0c0cJgt7DX8frDa5xPD8vdzwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\2116645\\Downloads\\ParentStudentApp\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj",
+  "projectFilePath": "C:\\Users\\2116645\\Downloads\\ParentStudentAppFinalCopy\\ParentApplication\\Server\\ParentInformation\\ParentInformationTest\\ParentInformationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2116645\\.nuget\\packages\\autofixture\\4.17.0\\autofixture.4.17.0.nupkg.sha512",
     "C:\\Users\\2116645\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",

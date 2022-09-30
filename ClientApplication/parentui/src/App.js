@@ -1,27 +1,28 @@
 import { Container } from "react-bootstrap";
 import { Card } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo.svg';
-import './App.css';
-import ParentForm from './FormComponent/Form';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import logo from "./logo.svg";
+import "./App.css";
+import ParentForm from "./FormComponent/Form";
+import NavBarComponent from "./NavBarComponent/NavbarComponent";
+import ParentFormWrapperComponent from "./ParentFormWrapper/ParentFormWrapperComponent";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeComponent from "./HomeComponent/HomeComponent";
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <BrowserRouter>
+        <NavBarComponent />
+        <Routes>
+          <Route path="create" element={<ParentFormWrapperComponent />}></Route>
 
-<br></br>
-<Container>
-<Card>
-<Card.Body>
-<ParentForm></ParentForm>
-</Card.Body>
-</Card>
-</Container>
-</div>
+          <Route path="" element={<HomeComponent />}></Route>
+        </Routes>
+        <div className="App">{/* <ParentFormWrapperComponent /> */}</div>
+      </BrowserRouter>
+    </>
   );
-    
-
 }
 
 export default App;
