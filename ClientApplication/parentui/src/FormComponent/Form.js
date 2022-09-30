@@ -117,10 +117,7 @@ function ParentForm() {
     if (!elm.value.match(phoneNumberRegex)) return;
 
     if (elm.value.length > phoneNumberMaxLength) return;
-    setFormValue({
-      ...formValue,
-      secondaryContactPersonPhoneNumber: elm.value,
-    });
+    setFormValue({ ...formValue,secondaryContactPersonPhoneNumber: elm.value });
   };
 
   return (
