@@ -15,7 +15,7 @@ namespace ParentInformation.Controllers
         private readonly IParentInfoRepository _parentInfoRepository;
 
         public IMapper _mapper { get; }
-
+        
         public ParentsController(IParentInfoRepository parentInfoRepository, IMapper mapper)
         {
             this._parentInfoRepository = parentInfoRepository;
@@ -42,12 +42,13 @@ namespace ParentInformation.Controllers
             return Ok(parents);
         }
         [HttpPut("UpdateParents")]
-        public IActionResult UpdateParent(Parent parent)
+        public IActionResult UpdateParent(ParentUpdateDTO parentUpdateDTO)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
+            Parent parent = _mapper.Map<Parent>(parentUpdateDTO);
             _parentInfoRepository.UpdateParent(parent);
             return Ok("Data updated ");
 
