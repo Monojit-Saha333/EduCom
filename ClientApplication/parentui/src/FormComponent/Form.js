@@ -3,15 +3,15 @@ import { countries } from "./country";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
-import RegistrationmodalComponent from "../RegistrationModalComponent/RegistrationModal";
 
 function PostUserData(userData, navigate) {
   return axios
-    .post("https://localhost:44309/Parents", userData)
+    .post("https://localhost:44309/RegisterParent", userData)
     .then((response) => {
       alert(
         `your account has been created with Id ${response.data.registrationId}`
@@ -130,10 +130,10 @@ function ParentForm() {
       <Form onSubmit={handleSubmit}>
         {/* student name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column sm="4">
             Student Name <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col sm="8">
             <Form.Control
               type="text"
               placeholder="Student Name"
@@ -145,10 +145,10 @@ function ParentForm() {
         </Form.Group>
         {/* Parent Name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column sm="4">
             Parent Name <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col sm="8">
             <Form.Control
               type="text"
               placeholder="Parent Name"
@@ -278,10 +278,10 @@ function ParentForm() {
         </Form.Group>
         {/*   Primary Contact Person Name:*/}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column sm="6">
             Primary Contact Person <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col sm="12">
             <Form.Control
               type="text"
               name="primaryContactPerson"
@@ -349,9 +349,16 @@ function ParentForm() {
           </Col>
         </Form.Group>
         <hr></hr>
-        <div id="submit">
-          <Button variant="primary">Submit</Button>
-        </div>
+
+        <Button
+          style={{ float: "right" }}
+          className="float-right"
+          size="lg"
+          variant="primary"
+          type="submit"
+        >
+          Submit
+        </Button>
       </Form>
     </div>
   );
