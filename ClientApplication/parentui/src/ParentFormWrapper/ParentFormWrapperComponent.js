@@ -5,7 +5,7 @@ import ParentForm from "../FormComponent/Form";
 
 function ParentFormWrapperComponent() {
   return (
-    <Container>
+    <Container><br></br>
       <Card>
         <Card.Body>
           <ParentForm />

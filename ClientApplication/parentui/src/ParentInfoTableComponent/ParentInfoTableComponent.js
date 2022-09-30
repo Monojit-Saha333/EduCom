@@ -3,7 +3,7 @@ import Table from "react-bootstrap/Table";
 
 function ParentInfoTableComponent({ data }) {
   return (
-    <Container>
+    <Container><br></br>
       <Card>
         <Table striped bordered hover>
           <thead>
