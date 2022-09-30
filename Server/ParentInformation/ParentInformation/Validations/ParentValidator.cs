@@ -68,9 +68,9 @@ namespace ParentInformation.Validation
                 .NotEmpty().WithMessage("Required");
 
 
-           /* RuleFor(x => x.StudentRegistrationId)
+            RuleFor(x => x.StudentRegistrationId)
                  .NotEmpty().WithMessage("Required")
-                 .Matches("^R[0-9]{7}").WithMessage("Registration Number must start with R"); */
+                 .Matches("^R[0-9]{7}").WithMessage("Registration Number must start with R"); 
 
 
 

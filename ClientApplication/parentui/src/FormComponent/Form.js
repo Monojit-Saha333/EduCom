@@ -62,11 +62,14 @@ function ParentForm() {
       setFormValue({ ...formValue, primaryContactPerson: e.target.value });
     }
   };
-  /*const handleStudentRegistrationId = (e) => {
-    if (e.target.value.match("^R[0-9]{7}") != null) {
-      setregistrationvalue({ ...registrationvalue, studentRegistrationId: e.target.value });
+  const handleStudentRegistrationId = (e) => {
+    if(e.target.value==="")
+    setFormValue({ ...formValue, studentRegistrationId: e.target.value });
+    if (e.target.value.match(/^R/)) {
+      setFormValue({ ...formValue, studentRegistrationId: e.target.value });
     }
-  };*/
+  };
+  
   const handleChangeSecondaryName = (e) => {
     if (e.target.value.match("^[a-zA-Z ]*$") != null) {
       setFormValue({ ...formValue, secondaryContactPerson: e.target.value });
@@ -163,8 +166,7 @@ function ParentForm() {
               name="studentRegistrationId"
               required="on"
               value={formValue.studentRegistrationId}
-              onChange={(e) =>
-                setFormValue({ ...formValue, studentRegistrationId: e.target.value })
+              onChange={handleStudentRegistrationId
               }
               
             />
