@@ -7,7 +7,7 @@ namespace ParentInformation.Models
     public class Parent
     {
 
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public Guid RegistationId { get; set; }
         [Required]

@@ -66,7 +66,7 @@ namespace ParentInformation.Repositories
 
         public void UpdateParent(Parent parent)
         {
-            //var parenttobeupdated=GetParentByRegistrationId(parent.RegistationId);
+            parent.status = "submitted";
             context.parent.Update(parent);
             context.SaveChanges();
         }

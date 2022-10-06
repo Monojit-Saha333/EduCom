@@ -15,7 +15,7 @@ namespace ParentInformation.Controllers
         private readonly IParentInfoRepository _parentInfoRepository;
 
         public IMapper _mapper { get; }
-        
+
         public ParentsController(IParentInfoRepository parentInfoRepository, IMapper mapper)
         {
             this._parentInfoRepository = parentInfoRepository;
@@ -24,22 +24,31 @@ namespace ParentInformation.Controllers
         [HttpPost("RegisterParent")]
         public IActionResult Create(ParentDTO parentDTO)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
             Parent parent = _mapper.Map<Parent>(parentDTO);
             _parentInfoRepository.CreateParent(parent);
-            var res=_parentInfoRepository.getResponse(parent);
+            var res = _parentInfoRepository.getResponse(parent);
             return Ok(res);
         }
-        
+
         [HttpGet("ParentsDetails")]
         public IActionResult GetParents()
         {
             var parents = _parentInfoRepository.GetAllParents();
-            if (parents.Count()==0)
+            if (parents.Count() == 0)
                 return NotFound("no data found");
             return Ok(parents);
+        }
+
+        [HttpGet("Parents/{RegId}")]
+        public IActionResult GetParentsByRegID(Guid RegId)
+        {
+            var parent = _parentInfoRepository.GetParentByRegistrationId(RegId);
+            if (parent == null)
+                return NotFound();
+            return Ok(parent);
         }
         [HttpPut("UpdateParents")]
         public IActionResult UpdateParent(ParentUpdateDTO parentUpdateDTO)
