@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj": {}
+    "C:\\Users\\2116787\\Downloads\\APPFOLDER\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj": {
+    "C:\\Users\\2116787\\Downloads\\APPFOLDER\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
+        "projectUniqueName": "C:\\Users\\2116787\\Downloads\\APPFOLDER\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
         "projectName": "ParentInformation",
-        "projectPath": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Downloads\\ctsproject2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\obj\\",
+        "projectPath": "C:\\Users\\2116787\\Downloads\\APPFOLDER\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
+        "packagesPath": "C:\\Users\\2116787\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\2116787\\Downloads\\APPFOLDER\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\2116787\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +47,10 @@
             "AutoFixture": {
               "target": "Package",
               "version": "[4.17.0, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -105,7 +113,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -117,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

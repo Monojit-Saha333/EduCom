@@ -36,7 +36,7 @@ namespace ParentInformation
             services.AddControllers()
          .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentValidator>());
             services.AddTransient<IParentInfoRepository, ParentInfoRepository>();
-            services.AddDbContext<ParentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection4")));
+            services.AddDbContext<ParentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
             services.AddSwaggerGen();
 
             var provider = services.BuildServiceProvider();
