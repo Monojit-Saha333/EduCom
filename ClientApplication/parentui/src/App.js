@@ -1,9 +1,5 @@
-import { Container } from "react-bootstrap";
-import { Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import logo from "./logo.svg";
 import "./App.css";
-import ParentForm from "./FormComponent/Form";
 import NavBarComponent from "./NavBarComponent/NavbarComponent";
 import ParentFormWrapperComponent from "./ParentFormWrapper/ParentFormWrapperComponent";
 import { BrowserRouter, Routes, Route } from "react-router-dom";

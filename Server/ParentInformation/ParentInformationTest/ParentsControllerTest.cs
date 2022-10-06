@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Moq;
 using NUnit.Framework;
 using ParentInformation.Controllers;
+using ParentInformation.DTOs;
 using ParentInformation.Models;
 using ParentInformation.Repositories;
 using System.Collections.Generic;
@@ -53,9 +54,10 @@ namespace ParentInformationTest
         public async Task createParent_Return_OK_when_Successfully_Posted()
         {
             var parentobj = _fixture.Create<Parent>();
+            var parentobjDTO = _fixture.Create<ParentDTO>();
             _ParentInforepositoryMock.Setup(repo => repo.CreateParent(parentobj));
             _controller = new ParentsController(_ParentInforepositoryMock.Object);
-            var output=_controller.Create(parentobj);
+            var output=_controller.Create(parentobjDTO);
             var obj=output as ObjectResult;
             Assert.AreEqual(200, obj.StatusCode);
         }

@@ -7,7 +7,7 @@ function HomeComponent() {
   const [userData, setuserData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://localhost:44309/Parents")
+      .get("https://localhost:44309/ParentsDetails")
       .then((response) => setuserData(response.data));
   }, []);
 

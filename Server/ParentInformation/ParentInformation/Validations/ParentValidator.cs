@@ -70,7 +70,7 @@ namespace ParentInformation.Validation
 
             RuleFor(x => x.StudentRegistrationId)
                  .NotEmpty().WithMessage("Required")
-                 .Matches("^R[0-9]{7}").WithMessage("Registration Number must start with R"); 
+                 .Matches("^R[0-9]{7}").WithMessage("Registration Number must start with R and must contain 8 characters"); 
 
 
 

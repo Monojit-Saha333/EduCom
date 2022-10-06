@@ -3,18 +3,20 @@ import { countries } from "./country";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
-import { useHistory, useNavigate } from "react-router-dom";
-import './Form.css';
+import { useNavigate } from "react-router-dom";
+import "./Form.css";
 
 function PostUserData(userData, navigate) {
   return axios
-    .post("https://localhost:44309/Parents", userData)
+    .post("https://localhost:44309/RegisterParent", userData)
     .then((response) => {
       alert(
         `your account has been created with Id ${response.data.registrationId}`
       );
+
       navigate("/");
     });
 }
@@ -63,19 +65,19 @@ function ParentForm() {
     }
   };
   const handleStudentRegistrationId = (e) => {
-    if(e.target.value==="")
-    setFormValue({ ...formValue, studentRegistrationId: e.target.value });
+    if (e.target.value === "")
+      setFormValue({ ...formValue, studentRegistrationId: e.target.value });
     if (e.target.value.match(/^R/)) {
       setFormValue({ ...formValue, studentRegistrationId: e.target.value });
     }
   };
-  
+
   const handleChangeSecondaryName = (e) => {
     if (e.target.value.match("^[a-zA-Z ]*$") != null) {
       setFormValue({ ...formValue, secondaryContactPerson: e.target.value });
     }
   };
-  
+
   const handleChangeParentName = (e) => {
     if (e.target.value.match("^[a-zA-Z ]*$") != null) {
       setFormValue({ ...formValue, parentName: e.target.value });
@@ -115,19 +117,23 @@ function ParentForm() {
     if (!elm.value.match(phoneNumberRegex)) return;
 
     if (elm.value.length > phoneNumberMaxLength) return;
-    setFormValue({ ...formValue,secondaryContactPersonPhoneNumber: elm.value });
+    setFormValue({
+      ...formValue,
+      secondaryContactPersonPhoneNumber: elm.value,
+    });
   };
 
   return (
     <div className="ParentForm">
       <h1>Parent Form</h1>
+      <hr></hr>
       <Form onSubmit={handleSubmit}>
         {/* student name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column md="4">
             Student Name <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col md="8">
             <Form.Control
               type="text"
               placeholder="Student Name"
@@ -139,10 +145,10 @@ function ParentForm() {
         </Form.Group>
         {/* Parent Name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column md="4">
             Parent Name <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col md="8">
             <Form.Control
               type="text"
               placeholder="Parent Name"
@@ -154,30 +160,30 @@ function ParentForm() {
         </Form.Group>
         {/* Student Registration number */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column md="4">
             Student Register Number <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col md="8">
             <Form.Control
               type="text"
               name="studentRegistrationId"
               required="on"
+              placeholder="RXXXXXXX"
               value={formValue.studentRegistrationId}
-              onChange={handleStudentRegistrationId
-              }
-              
+              onChange={handleStudentRegistrationId}
             />
           </Col>
         </Form.Group>
         <Row>
           {/* Address */}
           <Form.Group as={Col} controlId="formPlaintextPassword">
-            <Form.Label column sm="2">
+            <Form.Label column sm="4">
               Address <sup>*</sup>
             </Form.Label>
             <Form.Control
               type="text"
               name="address"
+              placeholder="House No Street Name"
               required="on"
               onChange={(e) =>
                 setFormValue({ ...formValue, address: e.target.value })
@@ -187,7 +193,7 @@ function ParentForm() {
           </Form.Group>
           {/* City */}
           <Form.Group as={Col} controlId="formPlaintextPassword">
-            <Form.Label column sm="2">
+            <Form.Label column sm="4">
               City <sup>*</sup>
             </Form.Label>
             <Form.Control
@@ -203,7 +209,9 @@ function ParentForm() {
         <Row className="mb-3">
           {/* Country */}
           <Form.Group as={Col} controlId="formPlaintextCountry">
-            <Form.Label>Country <sup>*</sup></Form.Label>
+            <Form.Label>
+              Country <sup>*</sup>
+            </Form.Label>
             <Form.Select
               name="country"
               id="country"
@@ -219,7 +227,9 @@ function ParentForm() {
           </Form.Group>
           {/* state */}
           <Form.Group as={Col} controlId="formPlaintextState">
-            <Form.Label>State <sup>*</sup></Form.Label>
+            <Form.Label>
+              State <sup>*</sup>
+            </Form.Label>
 
             <Form.Select
               name="states"
@@ -238,11 +248,14 @@ function ParentForm() {
           </Form.Group>
           {/* Zipcode */}
           <Form.Group as={Col} controlId="formPlaintextZipCode">
-            <Form.Label>Zipcode <sup>*</sup></Form.Label>
+            <Form.Label>
+              Zipcode <sup>*</sup>
+            </Form.Label>
 
             <Form.Control
               type="text"
               value={formValue.zipcode}
+              placeholder="Zipcode"
               required
               onChange={handleChangeZipcode}
             />
@@ -250,15 +263,15 @@ function ParentForm() {
         </Row>
         {/* Email */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column md="4">
             Email <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col sm="8">
             <Form.Control
               type="email"
               name="emailAddress"
               required="on"
-              placeholder="email@exapmle.com"
+              placeholder="email@example.com"
               onChange={(e) =>
                 setFormValue({ ...formValue, emailAddress: e.target.value })
               }
@@ -268,69 +281,74 @@ function ParentForm() {
         </Form.Group>
         {/*   Primary Contact Person Name:*/}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column md="4">
             Primary Contact Person <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col md="8">
             <Form.Control
               type="text"
               name="primaryContactPerson"
+              placeholder="Primary Contact Name"
               required="on"
-              onChange={handleChangePrimaryName }
+              onChange={handleChangePrimaryName}
               value={formValue.primaryContactPerson}
             />
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column md="4">
             Phone Number <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col md="8">
             <Form.Control
               type="text"
               value={formValue.primaryContactPersonPhoneNumber}
+              placeholder="Phone Number"
               required="on"
               onChange={handleChangePrimaryPhoneNumber}
             />
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column md="4">
             Secondary Contact Person <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col md="8">
             <Form.Control
               type="text"
               name="secondaryContactPerson"
               required="on"
+              placeholder="Secondary Contact Person"
               onChange={handleChangeSecondaryName}
               value={formValue.secondaryContactPerson}
             />
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
-           Phone Number <sup>*</sup>
+          <Form.Label column md="4">
+            Phone Number <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col md="8">
             <Form.Control
               type="text"
               value={formValue.secondaryContactPersonPhoneNumber}
               required="on"
+              placeholder="Secondary Contact person"
               onChange={handleChangeSecondaryPhoneNumber}
             />
           </Col>
         </Form.Group>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
-          <Form.Label column sm="2">
+          <Form.Label column md="4">
             Age <sup>*</sup>
           </Form.Label>
-          <Col sm="10">
+          <Col md="8">
             <Form.Control
               type="number"
               min="4"
               required="on"
               name="age"
+              placeholder="Age must be greater than 4 "
               onChange={(e) =>
                 setFormValue({ ...formValue, age: parseInt(e.target.value) })
               }
@@ -338,8 +356,16 @@ function ParentForm() {
             />
           </Col>
         </Form.Group>
+        <hr></hr>
 
-        <Button type="submit" value="submit">
+        <Button
+          className="float-right"
+          size="lg"
+          variant="primary"
+          type="submit"
+          id="submit"
+          style={{ float: "right" }}
+        >
           Submit
         </Button>
       </Form>

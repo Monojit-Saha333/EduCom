@@ -9,19 +9,19 @@ using System.Linq;
 namespace ParentInformation.Controllers
 {
     [ApiController]
-    [Route("[Controller]")]
+    [Route("/")]
     public class ParentsController : ControllerBase
     {
         private readonly IParentInfoRepository _parentInfoRepository;
 
         public IMapper _mapper { get; }
-
+        
         public ParentsController(IParentInfoRepository parentInfoRepository, IMapper mapper)
         {
             this._parentInfoRepository = parentInfoRepository;
             _mapper = mapper;
         }
-        [HttpPost]
+        [HttpPost("RegisterParent")]
         public IActionResult Create(ParentDTO parentDTO)
         {
             if(!ModelState.IsValid)
@@ -33,7 +33,7 @@ namespace ParentInformation.Controllers
             return Ok(res);
         }
         
-        [HttpGet]
+        [HttpGet("ParentsDetails")]
         public IActionResult GetParents()
         {
             var parents = _parentInfoRepository.GetAllParents();
@@ -41,18 +41,19 @@ namespace ParentInformation.Controllers
                 return NotFound("no data found");
             return Ok(parents);
         }
-        [HttpPut]
-        public IActionResult UpdateParent(Parent parent)
+        [HttpPut("UpdateParents")]
+        public IActionResult UpdateParent(ParentUpdateDTO parentUpdateDTO)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest();
             }
+            Parent parent = _mapper.Map<Parent>(parentUpdateDTO);
             _parentInfoRepository.UpdateParent(parent);
             return Ok("Data updated ");
 
         }
-        [HttpDelete]
+        [HttpDelete("DeleteParents")]
         public IActionResult Remove(Guid id)
         {
             _parentInfoRepository.DeleteParentByID(id);
