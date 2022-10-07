@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using Castle.Core.Logging;
 using Microsoft.AspNetCore.Mvc;
+using NLog;
 using ParentInformation.DTOs;
 using ParentInformation.Models;
 using ParentInformation.Repositories;
@@ -15,6 +17,7 @@ namespace ParentInformation.Controllers
         private readonly IParentInfoRepository _parentInfoRepository;
 
         public IMapper _mapper { get; }
+        public static Logger logger = LogManager.GetCurrentClassLogger();
 
         public ParentsController(IParentInfoRepository parentInfoRepository, IMapper mapper)
         {
@@ -24,6 +27,7 @@ namespace ParentInformation.Controllers
         [HttpPost("RegisterParent")]
         public IActionResult Create(ParentDTO parentDTO)
         {
+            logger.Info("Entered the ${nameOf(Create)} method");
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
@@ -36,6 +40,7 @@ namespace ParentInformation.Controllers
         [HttpGet("ParentsDetails")]
         public IActionResult GetParents()
         {
+            logger.Info("Entered the GetParents Action Method");
             var parents = _parentInfoRepository.GetAllParents();
             if (parents.Count() == 0)
                 return NotFound("no data found");
