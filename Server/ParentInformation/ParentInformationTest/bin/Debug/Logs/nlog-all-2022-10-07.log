@@ -1,0 +1,3 @@
+2022-10-07 14:28:56.8763|INFO|ParentInformation.Controllers.ParentsController|Entered the {nameOf(Create)} method
+2022-10-07 14:28:57.1529|INFO|ParentInformation.Controllers.ParentsController|Entered the GetParents Action Method
+2022-10-07 14:28:57.1700|INFO|ParentInformation.Controllers.ParentsController|Entered the GetParents Action Method
