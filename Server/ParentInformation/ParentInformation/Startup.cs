@@ -17,6 +17,7 @@ using Microsoft.EntityFrameworkCore;
 using FluentValidation.AspNetCore;
 using System.Reflection;
 using ParentInformation.Validation;
+using ParentInformation.Validations;
 
 namespace ParentInformation
 {
@@ -35,6 +36,8 @@ namespace ParentInformation
             //services.AddAutoMapper(typeof(Startup));
             services.AddControllers()
          .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentValidator>());
+            services.AddControllers()
+        .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentUpdateValidator>());
             services.AddTransient<IParentInfoRepository, ParentInfoRepository>();
             services.AddDbContext<ParentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
             services.AddSwaggerGen();
