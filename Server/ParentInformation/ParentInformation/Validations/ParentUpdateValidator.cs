@@ -6,6 +6,7 @@ namespace ParentInformation.Validations
     public class ParentUpdateValidator: AbstractValidator<ParentUpdateDTO>
          
     {
+        //a
         public ParentUpdateValidator()
         {
             RuleFor(x => x.StudentName).NotEmpty();
