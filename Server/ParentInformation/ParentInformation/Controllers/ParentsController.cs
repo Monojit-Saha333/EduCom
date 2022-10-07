@@ -15,22 +15,22 @@ namespace ParentInformation.Controllers
     public class ParentsController : ControllerBase
     {
         private readonly IParentInfoRepository _parentInfoRepository;
-
-        public IMapper _mapper { get; }
+       // public readonly IMapper _mapper;
         public static Logger logger = LogManager.GetCurrentClassLogger();
-
-        public ParentsController(IParentInfoRepository parentInfoRepository, IMapper mapper)
+        MapperConfiguration configparentDTO = new MapperConfiguration(cgf => cgf.CreateMap<ParentDTO, Parent>());
+        MapperConfiguration parentUpdateDTOConfig = new MapperConfiguration(i => i.CreateMap<ParentUpdateDTO, Parent>());
+        public ParentsController(IParentInfoRepository parentInfoRepository)
         {
             this._parentInfoRepository = parentInfoRepository;
-            _mapper = mapper;
+            
         }
         [HttpPost("RegisterParent")]
         public IActionResult Create(ParentDTO parentDTO)
         {
-            logger.Info("Entered the ${nameOf(Create)} method");
+            logger.Info("Entered the {nameOf(Create)} method");
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
+            var _mapper = new Mapper(configparentDTO);
             Parent parent = _mapper.Map<Parent>(parentDTO);
             _parentInfoRepository.CreateParent(parent);
             var res = _parentInfoRepository.getResponse(parent);
@@ -62,7 +62,8 @@ namespace ParentInformation.Controllers
             {
                 return BadRequest();
             }
-            Parent parent = _mapper.Map<Parent>(parentUpdateDTO);
+           Mapper mapper = new Mapper(parentUpdateDTOConfig);
+            Parent parent = mapper.Map<Parent>(parentUpdateDTO);
             _parentInfoRepository.UpdateParent(parent);
             return Ok("Data updated ");
 
