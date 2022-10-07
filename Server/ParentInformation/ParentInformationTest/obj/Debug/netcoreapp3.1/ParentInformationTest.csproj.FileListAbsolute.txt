@@ -334,3 +334,6 @@ C:\Users\Lenovo\Downloads\ctsproject2\ParentApplication\Server\ParentInformation
 C:\Users\Lenovo\Downloads\ctsproject2\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Downloads\ctsproject2\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.dll
 C:\Users\Lenovo\Downloads\ctsproject2\ParentApplication\Server\ParentInformation\ParentInformationTest\obj\Debug\netcoreapp3.1\ParentInformationTest.pdb
+C:\Users\2116787\Downloads\APPFOLDER\ParentApplication\Server\ParentInformation\ParentInformationTest\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\2116787\Downloads\APPFOLDER\ParentApplication\Server\ParentInformation\ParentInformationTest\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\2116787\Downloads\APPFOLDER\ParentApplication\Server\ParentInformation\ParentInformationTest\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll

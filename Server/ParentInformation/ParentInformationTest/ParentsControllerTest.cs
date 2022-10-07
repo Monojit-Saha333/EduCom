@@ -66,10 +66,11 @@ namespace ParentInformationTest
         public async Task UpdateParent_Return_OK()
         {
 
+            var parentDTOobj = _fixture.Create<ParentUpdateDTO>();
             var parentobj = _fixture.Create<Parent>();
             _ParentInforepositoryMock.Setup(repo => repo.UpdateParent(parentobj));
             _controller = new ParentsController(_ParentInforepositoryMock.Object);
-            var output = _controller.UpdateParent(parentobj);
+            var output = _controller.UpdateParent(parentDTOobj);
             var obj = output as ObjectResult;
             Assert.AreEqual(200, obj.StatusCode);
         }
@@ -79,10 +80,11 @@ namespace ParentInformationTest
         public void Delete_Return_OK()
         {
             var parentobj = _fixture.Create<Parent>();
+            var parentobjDTO = _fixture.Create<ParentUpdateDTO>();
             var parentregid = parentobj.RegistationId;
             _ParentInforepositoryMock.Setup(repo => repo.DeleteParentByID(parentregid));
             _controller = new ParentsController(_ParentInforepositoryMock.Object);
-            var output = _controller.UpdateParent(parentobj);
+            var output = _controller.UpdateParent(parentobjDTO);
             var obj = output as ObjectResult;
             Assert.AreEqual(200, obj.StatusCode);
         }
