@@ -8,6 +8,11 @@ namespace ParentInformation.Models
     {
 
         //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        
+        public Parent()
+        {
+            RegistrationDate=DateTime.Now;
+        }
         [Key]
         public Guid RegistationId { get; set; }
         [Required]
@@ -44,15 +49,15 @@ namespace ParentInformation.Models
         //[Required]
        // public DateTime RegistrationDate { get; set; }
         public string status { get; set; }
-        private DateTime registrationDate;
-        public DateTime RegistrationDate
+        public  DateTime RegistrationDate { get; private set; }
+       /* public DateTime RegistrationDate
         {
             get { return registrationDate; }
             set
             {
                 value = DateTime.Now.Date;
             }
-        }
+        }*/
 
     }
 }
