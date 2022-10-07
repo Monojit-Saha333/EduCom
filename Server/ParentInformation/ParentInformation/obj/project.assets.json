@@ -8530,23 +8530,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\2116787\\.nuget\\packages\\": {},
+    "C:\\Users\\2116645\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2116787\\Downloads\\APPFOLDER\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
+      "projectUniqueName": "C:\\Users\\2116645\\Downloads\\ParentStudentAppUseCase2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
       "projectName": "ParentInformation",
-      "projectPath": "C:\\Users\\2116787\\Downloads\\APPFOLDER\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
-      "packagesPath": "C:\\Users\\2116787\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2116787\\Downloads\\APPFOLDER\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\obj\\",
+      "projectPath": "C:\\Users\\2116645\\Downloads\\ParentStudentAppUseCase2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\ParentInformation.csproj",
+      "packagesPath": "C:\\Users\\2116645\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\2116645\\Downloads\\ParentStudentAppUseCase2\\ParentApplication\\Server\\ParentInformation\\ParentInformation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\2116787\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\2116645\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8555,6 +8555,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
