@@ -4,6 +4,7 @@ import NavBarComponent from "./NavBarComponent/NavbarComponent";
 import ParentFormWrapperComponent from "./ParentFormWrapper/ParentFormWrapperComponent";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeComponent from "./HomeComponent/HomeComponent";
+import DetailsComponent from "./DetailsComponent/DetailsComponent";
 
 function App() {
   return (
@@ -11,9 +12,9 @@ function App() {
       <BrowserRouter>
         <NavBarComponent />
         <Routes>
-          <Route path="create" element={<ParentFormWrapperComponent />}></Route>
-
-          <Route path="" element={<HomeComponent />}></Route>
+          <Route path="details" element={<DetailsComponent />} />
+          <Route path="create" element={<ParentFormWrapperComponent />} />
+          <Route path="" element={<HomeComponent />} />
         </Routes>
         <div className="App">{/* <ParentFormWrapperComponent /> */}</div>
       </BrowserRouter>
