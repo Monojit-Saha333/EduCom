@@ -3,7 +3,6 @@ import { countries } from "./country";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -27,7 +26,7 @@ function ParentForm() {
     parentName: "",
     studentRegistrationId: "",
     address: "",
-    state: "West Bengal",
+    state: "",
     country: "IN",
     city: "",
     zipcode: "",
@@ -39,7 +38,7 @@ function ParentForm() {
     age: 0,
   });
   //const[registrationvalue,setregistrationvalue]=useState();
-  const [userData, setuserData] = useState(null);
+  // const [userData, setuserData] = useState(null);
   const navigate = useNavigate();
   const states = countries.find(
     (country) => country.countrycode === formValue.country

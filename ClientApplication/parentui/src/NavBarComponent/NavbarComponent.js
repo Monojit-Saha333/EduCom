@@ -9,13 +9,13 @@ function NavBarComponent() {
     <>
       <Navbar bg="light" variant="light">
         <Container>
-          <Navbar.Brand href="#home">Parent App</Navbar.Brand>
+          <Link to="/" className="nav-link">
+            <Navbar.Brand>Parent App</Navbar.Brand>
+          </Link>
           <Nav className="me-auto">
             <Link className="nav-link" to="/">
               Home
             </Link>
-           
-        
           </Nav>
           <div className="d-flex">
             <Button variant="outline-success">
