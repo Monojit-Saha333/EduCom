@@ -5,6 +5,8 @@ import ParentFormWrapperComponent from "./ParentFormWrapper/ParentFormWrapperCom
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeComponent from "./HomeComponent/HomeComponent";
 import DetailsComponent from "./DetailsComponent/DetailsComponent";
+import Login from "./Auth/Login";
+import Register from "./Auth/Register";
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
           <Route path="details" element={<DetailsComponent />} />
           <Route path="create" element={<ParentFormWrapperComponent />} />
           <Route path="" element={<HomeComponent />} />
+          <Route path="/login" element={<Login/>}></Route>
+          <Route path="/Register" element={<Register/>}></Route>
         </Routes>
-        <div className="App">{/* <ParentFormWrapperComponent /> */}</div>
+        <div className="App">{/*<ParentFormWrapperComponent />*/}</div>
       </BrowserRouter>
     </>
   );
