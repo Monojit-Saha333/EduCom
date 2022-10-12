@@ -20,7 +20,7 @@ var DetailsComponent = () => {
       studentRegistrationId: "",
       address: "",
       state: "",
-      country: "India",
+      country: "IN",
       city: "",
       zipcode: "",
       emailAddress: "",
@@ -49,7 +49,7 @@ var DetailsComponent = () => {
   // console.log(formValue);
 
   const states = countries.find(
-    (country) => country.countryname === formValue.country
+    (country) => country.countrycode === formValue.country
   ).states;
 
   const updateDetails = (formValue) => {

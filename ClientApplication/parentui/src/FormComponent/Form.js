@@ -7,16 +7,16 @@ import Button from "react-bootstrap/Button";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
+import Modal from "react-bootstrap/Modal";
 
-function PostUserData(userData, navigate) {
+function PostUserData(userData) {
   return axios
     .post("https://localhost:44309/RegisterParent", userData)
     .then((response) => {
-      alert(
-        `your account has been created with Id ${response.data.registrationId}`
-      );
-
-      navigate("/");
+      // alert(
+      //   `your account has been created with Id ${response.data.registrationId}`
+      // );
+      // return response.data.registrationId;
     });
 }
 
@@ -37,17 +37,21 @@ function ParentForm() {
     secondaryContactPersonPhoneNumber: "",
     age: 0,
   });
-  //const[registrationvalue,setregistrationvalue]=useState();
-  // const [userData, setuserData] = useState(null);
-  const navigate = useNavigate();
+   const navigate = useNavigate();
   const states = countries.find(
     (country) => country.countrycode === formValue.country
   ).states;
   console.log(states);
+  const [displaySubmitModal,setDisplaySubmitModal]=useState(false);
+  const [modalmessage,setmodalmessage]=useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    PostUserData(formValue, navigate);
     console.log(formValue);
+   PostUserData(formValue);
+    // console.log(res);
+    setmodalmessage();
+    setDisplaySubmitModal(true);
+    
   };
 
   const handlecountrychange = (e) => {
@@ -368,6 +372,13 @@ function ParentForm() {
           Submit
         </Button>
       </Form>
+      <Modal show={displaySubmitModal}>
+      <Modal.Header> Submitted</Modal.Header>
+      <Modal.Body>your account has been created {modalmessage}</Modal.Body>
+      <Modal.Footer> 
+      <Button onClick={()=>{navigate("/")}}> Ok</Button>
+      </Modal.Footer>
+      </Modal>
     </div>
   );
 }

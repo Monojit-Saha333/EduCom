@@ -9,9 +9,7 @@ function HomeComponent() {
     const { data } = await axios.get("https://localhost:44309/ParentsDetails");
     setuserData(data);
   };
-  useEffect(() => /* {
-     axios.get("https://localhost:44309/ParentsDetails").then((response) => setuserData(response.data));
-  }*/ {
+  useEffect(() => {
     fetchdata();
   }, []);
 

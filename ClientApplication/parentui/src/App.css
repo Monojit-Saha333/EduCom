@@ -37,3 +37,10 @@ body{
     transform: rotate(360deg);
   }
 }
+
+.login-div
+{
+  margin-top: 20px;
+  padding-top:20px;
+  padding-bottom:20px;
+}
