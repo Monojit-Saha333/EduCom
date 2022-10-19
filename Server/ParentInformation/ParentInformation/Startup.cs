@@ -66,8 +66,10 @@ namespace ParentInformation
             {
                 app.UseDeveloperExceptionPage();
             }
+           
             app.UseSwagger();
             app.UseSwaggerUI();
+            app.UseMiddleware();
             app.UseHttpsRedirection();
             app.UseCors();
 
