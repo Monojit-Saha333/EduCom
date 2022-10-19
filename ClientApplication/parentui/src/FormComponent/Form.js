@@ -9,16 +9,7 @@ import { useNavigate } from "react-router-dom";
 import "./Form.css";
 import Modal from "react-bootstrap/Modal";
 
-function PostUserData(userData) {
-  return axios
-    .post("https://localhost:44309/RegisterParent", userData)
-    .then((response) => {
-      // alert(
-      //   `your account has been created with Id ${response.data.registrationId}`
-      // );
-      // return response.data.registrationId;
-    });
-}
+
 
 function ParentForm() {
   const [formValue, setFormValue] = useState({
@@ -44,6 +35,16 @@ function ParentForm() {
   console.log(states);
   const [displaySubmitModal,setDisplaySubmitModal]=useState(false);
   const [modalmessage,setmodalmessage]=useState("");
+  function PostUserData(userData) {
+    return axios
+      .post("https://localhost:44309/RegisterParent", userData)
+      .then((response) => {
+        // alert(
+        //   `your account has been created with Id ${response.data.registrationId}`
+        // );
+        setmodalmessage( response.data.registrationId);
+      });
+  }
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formValue);
@@ -374,7 +375,7 @@ function ParentForm() {
       </Form>
       <Modal show={displaySubmitModal}>
       <Modal.Header> Submitted</Modal.Header>
-      <Modal.Body>your account has been created {modalmessage}</Modal.Body>
+      <Modal.Body>your account has been created with registration Id {modalmessage}</Modal.Body>
       <Modal.Footer> 
       <Button onClick={()=>{navigate("/")}}> Ok</Button>
       </Modal.Footer>

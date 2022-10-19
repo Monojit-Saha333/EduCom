@@ -1,0 +1,752 @@
+2022-10-17 12:10:03.3506|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2022-10-17 12:10:04.1369|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly ParentInformation
+2022-10-17 12:10:04.1369|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-17 12:10:04.1369|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-17 12:10:04.1700|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-10-17 12:10:04.1756|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-10-17 12:10:04.2005|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation
+2022-10-17 12:10:04.2089|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2022-10-17 12:10:04.2654|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/index.html  
+2022-10-17 12:10:04.3476|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2022-10-17 12:10:04.3476|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:10:04.4992|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2022-10-17 12:10:04.9413|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2022-10-17 12:10:04.9413|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 690.3188ms 200 text/html;charset=utf-8
+2022-10-17 12:10:05.1092|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_framework/aspnetcore-browser-refresh.js  
+2022-10-17 12:10:05.1245|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 15.3021ms 200 application/javascript; charset=utf-8
+2022-10-17 12:10:05.5237|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_vs/browserLink  
+2022-10-17 12:10:05.6933|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 170.7813ms 200 text/javascript; charset=UTF-8
+2022-10-17 12:10:06.3473|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/v1/swagger.json  
+2022-10-17 12:10:06.3495|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:10:06.5719|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 224.7763ms 200 application/json;charset=utf-8
+2022-10-17 12:11:37.1323|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 459
+2022-10-17 12:11:37.1323|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:11:37.1323|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:11:37.1469|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:11:37.1469|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:11:37.1469|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:11:37.2288|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:11:37.2288|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:11:37.2288|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:11:37.2288|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:11:37.2509|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2022-10-17 12:11:37.3224|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:11:37.3224|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:11:37.3224|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:11:37.3224|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:11:37.3224|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:11:37.3224|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:11:37.3224|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:11:37.6513|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-17 12:11:37.8956|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:11:37.8956|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:11:37.9138|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:11:37.9138|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:11:37.9499|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter threw an exception: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $.secondaryContactPersonPhoneNumber | LineNumber: 15 | BytePositionInLine: 0.|System.Text.Json.JsonException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $.secondaryContactPersonPhoneNumber | LineNumber: 15 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. LineNumber: 15 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextToken(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ConsumeNextTokenOrRollback(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadAsync[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+2022-10-17 12:11:38.2913|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:11:38.2913|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:11:38.2913|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:11:38.2913|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:11:38.2913|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:11:38.2913|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:11:38.2913|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:11:38.2913|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2022-10-17 12:11:38.2913|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:11:38.3008|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-10-17 12:11:38.3008|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:11:38.3008|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:11:38.3008|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:11:38.3008|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:11:38.3008|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:11:38.3008|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:11:38.3008|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:11:38.3008|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml'.
+2022-10-17 12:11:38.3008|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-17 12:11:38.3008|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-10-17 12:11:38.3187|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:11:38.3187|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:11:38.3187|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:11:38.3187|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 991.4097ms
+2022-10-17 12:11:38.3187|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:11:38.3187|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1203.1817ms 400 application/problem+json; charset=utf-8
+2022-10-17 12:12:07.6280|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 458
+2022-10-17 12:12:07.6338|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:12:07.6338|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:12:07.6338|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:12:07.6456|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:12:07.6456|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:07.6456|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:07.6456|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:12:07.6456|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:12:07.6777|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:12:07.6777|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:12:07.6777|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:12:07.6777|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:12:07.6777|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ParentInformation.DTOs.ParentDTO'
+2022-10-17 12:12:07.6777|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:07.6777|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:07.6777|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:12:07.8799|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:12:07.8799|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:12:07.8799|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:12:07.8799|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:12:07.8799|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:12:07.8799|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml'.
+2022-10-17 12:12:07.8799|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-17 12:12:07.8799|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:07.8799|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:07.8799|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 229.683ms
+2022-10-17 12:12:07.8799|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:07.8799|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 255.5034ms 400 application/problem+json; charset=utf-8
+2022-10-17 12:12:36.2568|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 472
+2022-10-17 12:12:36.2568|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:12:36.2700|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:12:36.2700|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:12:36.2700|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:12:36.2700|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:12:36.2700|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:12:36.2700|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:12:36.2700|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:36.2700|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:36.2700|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:12:36.2700|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:12:36.2850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:12:36.2850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:12:36.2850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:12:36.2850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:12:36.2850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:12:36.2850|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:12:36.2850|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:12:36.2850|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:12:36.3009|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:12:36.3009|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ParentInformation.DTOs.ParentDTO'
+2022-10-17 12:12:36.3009|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:36.3009|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:36.3009|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:12:36.3349|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:12:36.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:12:36.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:12:36.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:12:36.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:12:36.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml'.
+2022-10-17 12:12:36.3349|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-17 12:12:36.3349|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:36.3349|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:36.3349|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 54.9348ms
+2022-10-17 12:12:36.3349|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:36.3349|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 87.105ms 400 application/problem+json; charset=utf-8
+2022-10-17 12:12:46.3730|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 473
+2022-10-17 12:12:46.3730|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:12:46.3730|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:12:46.3792|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:12:46.3792|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:46.3792|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:46.3792|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:12:46.3792|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:12:46.4127|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:12:46.4127|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:12:46.4127|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:12:46.4127|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:12:46.4127|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ParentInformation.DTOs.ParentDTO'
+2022-10-17 12:12:46.4127|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:46.4127|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:46.4127|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:12:46.4374|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:12:46.4374|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:46.4374|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:46.4374|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:12:46.4374|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:12:46.4490|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method ParentInformation.Controllers.ParentsController.Create (ParentInformation) - Validation state: Valid
+2022-10-17 12:12:46.4490|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method ParentInformation.Controllers.ParentsController.Create (ParentInformation) with arguments (ParentInformation.DTOs.ParentDTO)
+2022-10-17 12:12:46.4600|INFO|ParentInformation.Controllers.ParentsController|Entered the {nameOf(Create)} method
+2022-10-17 12:12:47.5079|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-17 12:12:47.6201|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|'ParentContext' generated a value for the 'RegistationId' property of new 'Parent' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:12:47.7399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ParentContext' started tracking 'Parent' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:12:47.7399|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'ParentContext'.
+2022-10-17 12:12:47.7399|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-17 12:12:47.8091|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-17 12:12:47.9430|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:12:59.1483|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:12:59.1483|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2022-10-17 12:12:59.1841|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2022-10-17 12:12:59.2983|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2022-10-17 12:12:59.3115|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (6ms).
+2022-10-17 12:12:59.3596|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [parent] ([RegistationId], [Address], [Age], [City], [Country], [EmailAddress], [ParentName], [PrimaryContactPerson], [PrimaryContactPersonPhoneNumber], [RegistrationDate], [SecondaryContactPerson], [SecondaryContactPersonPhoneNumber], [State], [StudentName], [StudentRegistrationId], [Zipcode], [status])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2022-10-17 12:12:59.4720|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (127ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [parent] ([RegistationId], [Address], [Age], [City], [Country], [EmailAddress], [ParentName], [PrimaryContactPerson], [PrimaryContactPersonPhoneNumber], [RegistrationDate], [SecondaryContactPerson], [SecondaryContactPersonPhoneNumber], [State], [StudentName], [StudentRegistrationId], [Zipcode], [status])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2022-10-17 12:12:59.4782|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2022-10-17 12:12:59.4782|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-17 12:12:59.4927|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-17 12:12:59.4927|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:12:59.5090|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:12:59.5090|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2022-10-17 12:12:59.5353|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An 'Parent' entity tracked by 'ParentContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:12:59.5353|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'ParentContext' with 1 entities written to the database.
+2022-10-17 12:12:59.5353|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method ParentInformation.Controllers.ParentsController.Create (ParentInformation), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13089.7815ms.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2022-10-17 12:12:59.5353|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:12:59.5353|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:12:59.5353|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-17 12:12:59.5353|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-17 12:12:59.5353|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-17 12:12:59.5353|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'ParentInformation.Models.ResponseModel'.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:59.5353|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:12:59.5353|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 13160.2123ms
+2022-10-17 12:12:59.5505|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:12:59.5505|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-17 12:12:59.5505|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13184.6913ms 200 application/json; charset=utf-8
+2022-10-17 12:15:31.7332|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 473
+2022-10-17 12:15:31.7405|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:15:31.7405|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:26:07.0632|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2022-10-17 12:26:07.9669|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly ParentInformation
+2022-10-17 12:26:07.9985|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-17 12:26:07.9985|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-17 12:26:08.0350|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-10-17 12:26:08.0350|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-10-17 12:26:08.0555|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation
+2022-10-17 12:26:08.0555|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2022-10-17 12:26:08.0837|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/index.html  
+2022-10-17 12:26:08.1644|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2022-10-17 12:26:08.1644|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:26:08.3340|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2022-10-17 12:26:08.9384|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2022-10-17 12:26:09.0342|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_framework/aspnetcore-browser-refresh.js  
+2022-10-17 12:26:09.0467|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 957.4147ms 200 text/html;charset=utf-8
+2022-10-17 12:26:09.0467|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 14.3354ms 200 application/javascript; charset=utf-8
+2022-10-17 12:26:09.1142|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_vs/browserLink  
+2022-10-17 12:26:09.2744|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 160.2288ms 200 text/javascript; charset=UTF-8
+2022-10-17 12:26:09.4807|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/v1/swagger.json  
+2022-10-17 12:26:09.4807|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:26:09.7512|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 270.7965ms 200 application/json;charset=utf-8
+2022-10-17 12:27:09.4406|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 470
+2022-10-17 12:27:09.4420|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:27:09.4589|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:28:10.7630|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:28:10.7630|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:28:10.7630|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:28:10.8494|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:28:10.8494|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:28:10.8494|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:28:10.8647|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:28:10.8647|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2022-10-17 12:28:10.9344|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:28:10.9344|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:28:10.9344|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:28:10.9344|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:28:10.9344|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:28:10.9344|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:28:10.9434|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:28:11.1945|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-17 12:28:11.4096|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:28:11.4211|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:28:11.4255|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:28:11.4255|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:28:11.4255|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter threw an exception: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.|System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadAsync[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+2022-10-17 12:28:11.7641|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:28:11.7641|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:28:11.7641|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:28:11.7694|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:28:11.7910|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:28:11.7910|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:28:11.7910|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:28:11.7910|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2022-10-17 12:28:11.7910|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:28:11.7910|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-10-17 12:28:11.7910|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:28:11.7910|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:28:11.7910|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:28:11.7910|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:28:11.8054|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:28:11.8054|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:28:11.8054|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:28:11.8054|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml'.
+2022-10-17 12:28:11.8159|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-17 12:28:11.8159|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-10-17 12:28:11.8159|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:28:11.8159|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:28:11.8159|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:28:11.8414|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 896.3729ms
+2022-10-17 12:28:11.8414|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:28:11.8550|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 62421.9471ms 400 application/problem+json; charset=utf-8
+2022-10-17 12:29:32.5523|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 470
+2022-10-17 12:29:32.5523|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:29:32.5523|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:29:39.8415|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:29:39.8415|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:29:39.8415|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:29:39.8478|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:29:39.8478|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:29:39.8478|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:29:39.8782|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter threw an exception: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.|System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadAsync[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml'.
+2022-10-17 12:29:39.8793|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-17 12:29:39.8793|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:29:39.8793|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:29:39.8793|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 32.7286ms
+2022-10-17 12:29:39.8793|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:29:39.8793|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 7331.8115ms 400 application/problem+json; charset=utf-8
+2022-10-17 12:31:28.5589|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2022-10-17 12:31:29.6896|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly ParentInformation
+2022-10-17 12:31:29.6966|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-17 12:31:29.6966|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-17 12:31:29.9910|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-10-17 12:31:30.0659|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-10-17 12:31:30.0751|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation
+2022-10-17 12:31:30.0751|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2022-10-17 12:31:30.1364|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/index.html  
+2022-10-17 12:31:30.2280|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2022-10-17 12:31:30.2280|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:31:30.4117|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2022-10-17 12:31:30.8606|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2022-10-17 12:31:30.8684|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 736.5083ms 200 text/html;charset=utf-8
+2022-10-17 12:31:30.9342|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_framework/aspnetcore-browser-refresh.js  
+2022-10-17 12:31:30.9342|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_vs/browserLink  
+2022-10-17 12:31:30.9477|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13.3204ms 200 application/javascript; charset=utf-8
+2022-10-17 12:31:31.0939|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 157.1777ms 200 text/javascript; charset=UTF-8
+2022-10-17 12:31:31.4939|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/v1/swagger.json  
+2022-10-17 12:31:31.4939|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:31:31.9810|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 487.5276ms 200 application/json;charset=utf-8
+2022-10-17 12:31:37.1638|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/index.html  
+2022-10-17 12:31:37.1806|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:31:37.1806|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2022-10-17 12:31:37.6051|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2022-10-17 12:31:37.6051|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 444.036ms 200 text/html;charset=utf-8
+2022-10-17 12:31:37.7836|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_framework/aspnetcore-browser-refresh.js  
+2022-10-17 12:31:37.7836|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1.002ms 200 application/javascript; charset=utf-8
+2022-10-17 12:31:37.8842|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_vs/browserLink  
+2022-10-17 12:31:37.9533|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 69.1172ms 200 text/javascript; charset=UTF-8
+2022-10-17 12:31:38.6165|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/v1/swagger.json  
+2022-10-17 12:31:38.6165|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:31:38.6423|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 25.7356ms 200 application/json;charset=utf-8
+2022-10-17 12:31:54.1062|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 470
+2022-10-17 12:31:54.1062|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:31:54.1203|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:32:27.4659|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:32:27.4659|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:32:27.4659|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:32:27.5712|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:32:27.5712|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:32:27.5712|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:32:27.5712|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:32:27.5897|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2022-10-17 12:32:27.6549|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:32:27.6549|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:32:27.6549|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:32:27.6599|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:32:27.6599|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:32:27.6599|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:32:27.6599|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:32:27.9141|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-17 12:32:28.1561|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:32:28.1668|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:32:28.1668|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:32:28.1668|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:32:28.1981|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ParentInformation.DTOs.ParentDTO'
+2022-10-17 12:32:28.1981|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:32:28.1981|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:32:28.1981|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:32:28.3583|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:32:28.3583|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:32:28.3632|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:32:28.3632|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:32:28.3632|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:32:28.3632|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method ParentInformation.Controllers.ParentsController.Create (ParentInformation) - Validation state: Valid
+2022-10-17 12:32:28.3632|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method ParentInformation.Controllers.ParentsController.Create (ParentInformation) with arguments (ParentInformation.DTOs.ParentDTO)
+2022-10-17 12:32:28.3632|INFO|ParentInformation.Controllers.ParentsController|Entered the {nameOf(Create)} method
+2022-10-17 12:32:29.3929|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-17 12:32:29.4743|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|'ParentContext' generated a value for the 'RegistationId' property of new 'Parent' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:32:29.6198|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ParentContext' started tracking 'Parent' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:32:29.6198|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'ParentContext'.
+2022-10-17 12:32:29.6198|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-17 12:32:29.6806|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-17 12:32:29.8307|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:32:40.5563|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:32:40.5709|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2022-10-17 12:32:40.5872|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2022-10-17 12:32:40.6870|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2022-10-17 12:32:40.6979|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (6ms).
+2022-10-17 12:32:40.7349|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [parent] ([RegistationId], [Address], [Age], [City], [Country], [EmailAddress], [ParentName], [PrimaryContactPerson], [PrimaryContactPersonPhoneNumber], [RegistrationDate], [SecondaryContactPerson], [SecondaryContactPersonPhoneNumber], [State], [StudentName], [StudentRegistrationId], [Zipcode], [status])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2022-10-17 12:32:40.8638|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (131ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [parent] ([RegistationId], [Address], [Age], [City], [Country], [EmailAddress], [ParentName], [PrimaryContactPerson], [PrimaryContactPersonPhoneNumber], [RegistrationDate], [SecondaryContactPerson], [SecondaryContactPersonPhoneNumber], [State], [StudentName], [StudentRegistrationId], [Zipcode], [status])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2022-10-17 12:32:40.8804|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2022-10-17 12:32:40.8964|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-17 12:32:40.9184|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-17 12:32:40.9184|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:32:40.9386|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:32:40.9450|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2022-10-17 12:32:40.9910|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An 'Parent' entity tracked by 'ParentContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:32:41.0134|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'ParentContext' with 1 entities written to the database.
+2022-10-17 12:32:41.0241|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method ParentInformation.Controllers.ParentsController.Create (ParentInformation), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12644.9211ms.
+2022-10-17 12:32:41.0241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:32:41.0241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:32:41.0241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:32:41.0241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:32:41.0241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:32:41.0241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:32:41.0241|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2022-10-17 12:32:41.0241|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:32:41.0398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:32:41.0398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-17 12:32:41.0398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-17 12:32:41.0398|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-17 12:32:41.0398|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'ParentInformation.Models.ResponseModel'.
+2022-10-17 12:32:41.0560|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2022-10-17 12:32:41.0560|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:32:41.0560|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:32:41.0560|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 13396.0494ms
+2022-10-17 12:32:41.0560|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:32:41.0560|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-17 12:32:41.0714|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 46968.7567ms 200 application/json; charset=utf-8
+2022-10-17 12:35:03.2631|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2022-10-17 12:35:03.6465|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly ParentInformation
+2022-10-17 12:35:03.6465|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-17 12:35:03.6465|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-17 12:35:03.6465|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-10-17 12:35:03.6465|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-10-17 12:35:03.6465|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation
+2022-10-17 12:35:03.6465|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2022-10-17 12:35:03.6924|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/index.html  
+2022-10-17 12:35:03.7624|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2022-10-17 12:35:03.7624|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:35:03.8736|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2022-10-17 12:35:04.2210|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2022-10-17 12:35:04.2298|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 542.7043ms 200 text/html;charset=utf-8
+2022-10-17 12:35:04.3407|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_framework/aspnetcore-browser-refresh.js  
+2022-10-17 12:35:04.3407|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_vs/browserLink  
+2022-10-17 12:35:04.3473|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 6.5212ms 200 application/javascript; charset=utf-8
+2022-10-17 12:35:04.3836|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 41.4369ms 200 text/javascript; charset=UTF-8
+2022-10-17 12:35:04.9681|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/v1/swagger.json  
+2022-10-17 12:35:04.9681|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:35:05.2201|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 252.4625ms 200 application/json;charset=utf-8
+2022-10-17 12:35:26.3761|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2022-10-17 12:35:27.0232|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly ParentInformation
+2022-10-17 12:35:27.0232|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-17 12:35:27.0232|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-17 12:35:27.1054|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-10-17 12:35:27.1341|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-10-17 12:35:27.1539|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation
+2022-10-17 12:35:27.1539|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2022-10-17 12:35:27.2262|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/index.html  
+2022-10-17 12:35:27.3276|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2022-10-17 12:35:27.3276|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:35:27.4660|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2022-10-17 12:35:27.8369|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2022-10-17 12:35:27.8369|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 626.6071ms 200 text/html;charset=utf-8
+2022-10-17 12:35:28.1210|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_framework/aspnetcore-browser-refresh.js  
+2022-10-17 12:35:28.2442|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 122.8354ms 200 application/javascript; charset=utf-8
+2022-10-17 12:35:28.4463|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_vs/browserLink  
+2022-10-17 12:35:28.9651|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 518.8315ms 200 text/javascript; charset=UTF-8
+2022-10-17 12:35:29.6758|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/v1/swagger.json  
+2022-10-17 12:35:29.6758|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:35:29.8971|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 221.6855ms 200 application/json;charset=utf-8
+2022-10-17 12:35:51.0607|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 470
+2022-10-17 12:35:51.0607|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:35:51.0697|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:40:13.3817|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2022-10-17 12:40:14.0809|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly ParentInformation
+2022-10-17 12:40:14.1105|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-17 12:40:14.1105|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-17 12:40:14.1296|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-10-17 12:40:14.1296|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-10-17 12:40:14.1296|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation
+2022-10-17 12:40:14.1296|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2022-10-17 12:40:14.1739|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/index.html  
+2022-10-17 12:40:14.2528|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2022-10-17 12:40:14.2533|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:40:14.3750|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2022-10-17 12:40:14.8794|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2022-10-17 12:40:14.8794|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_framework/aspnetcore-browser-refresh.js  
+2022-10-17 12:40:14.9016|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13.821ms 200 application/javascript; charset=utf-8
+2022-10-17 12:40:14.9016|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 732.8437ms 200 text/html;charset=utf-8
+2022-10-17 12:40:15.0680|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_vs/browserLink  
+2022-10-17 12:40:15.1602|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 92.2236ms 200 text/javascript; charset=UTF-8
+2022-10-17 12:40:15.4649|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/v1/swagger.json  
+2022-10-17 12:40:15.4649|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:40:15.8620|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 397.672ms 200 application/json;charset=utf-8
+2022-10-17 12:40:34.8621|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 470
+2022-10-17 12:40:34.8642|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:40:34.8642|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:40:34.8885|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:40:34.8885|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:40:34.8885|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:40:34.9543|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:40:34.9605|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:40:34.9605|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:40:34.9605|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:40:34.9830|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2022-10-17 12:40:35.0552|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:40:35.0552|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:40:35.0552|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:40:35.0552|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:40:35.0552|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:40:35.0552|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:40:35.0552|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:40:35.3353|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-17 12:40:35.5964|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:40:35.6096|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:40:35.6141|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:40:35.6141|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:40:35.6349|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter threw an exception: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.|System.Text.Json.JsonException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+ ---> System.Text.Json.JsonReaderException: The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true. LineNumber: 0 | BytePositionInLine: 0.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& readStack, JsonReaderException ex)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonSerializerOptions options, Utf8JsonReader& reader, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadCore(JsonReaderState& readerState, Boolean isFinalBlock, ReadOnlySpan`1 buffer, JsonSerializerOptions options, ReadStack& readStack)
+   at System.Text.Json.JsonSerializer.ReadAsync[TValue](Stream utf8Json, Type returnType, JsonSerializerOptions options, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+2022-10-17 12:40:36.0480|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:40:36.0480|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:40:36.0480|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:40:36.0519|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:40:36.0519|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter|The request has model state errors, returning an error response.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:40:36.0519|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:40:36.0519|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:40:36.0696|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:40:36.0696|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:40:36.0696|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml'.
+2022-10-17 12:40:36.0696|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-10-17 12:40:36.0696|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-10-17 12:40:36.0863|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2022-10-17 12:40:36.0863|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:40:36.0863|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:40:36.0863|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 1024.6227ms
+2022-10-17 12:40:36.0863|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:40:36.0979|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 1238.8403ms 400 application/problem+json; charset=utf-8
+2022-10-17 12:41:38.1207|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2022-10-17 12:41:38.8614|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly ParentInformation
+2022-10-17 12:41:38.9121|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-10-17 12:41:38.9121|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-10-17 12:41:38.9313|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2022-10-17 12:41:38.9313|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2022-10-17 12:41:38.9412|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation
+2022-10-17 12:41:38.9412|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2022-10-17 12:41:38.9770|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/index.html  
+2022-10-17 12:41:39.0605|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2022-10-17 12:41:39.0605|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:41:39.2402|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2022-10-17 12:41:39.7089|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2022-10-17 12:41:39.7089|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 744.6051ms 200 text/html;charset=utf-8
+2022-10-17 12:41:39.8215|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_framework/aspnetcore-browser-refresh.js  
+2022-10-17 12:41:39.8471|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/_vs/browserLink  
+2022-10-17 12:41:39.9343|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 112.4318ms 200 application/javascript; charset=utf-8
+2022-10-17 12:41:40.3444|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 497.1555ms 200 text/javascript; charset=UTF-8
+2022-10-17 12:41:40.7337|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44309/swagger/v1/swagger.json  
+2022-10-17 12:41:40.7337|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:41:41.2032|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 469.5138ms 200 application/json;charset=utf-8
+2022-10-17 12:41:48.7348|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44309/RegisterParent application/json 470
+2022-10-17 12:41:48.7382|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2022-10-17 12:41:48.7382|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2022-10-17 12:41:48.7662|DEBUG|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|The request has an origin header: 'https://localhost:44309'.
+2022-10-17 12:41:48.7662|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution failed.
+2022-10-17 12:41:48.7662|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Request origin https://localhost:44309 does not have permission to access the resource.
+2022-10-17 12:41:48.8368|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/RegisterParent'
+2022-10-17 12:41:48.8368|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)' with route pattern 'RegisterParent' is valid for the request path '/RegisterParent'
+2022-10-17 12:41:48.8368|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:41:48.8368|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:41:48.8606|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2022-10-17 12:41:48.9235|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Create", controller = "Parents"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(ParentInformation.DTOs.ParentDTO) on controller ParentInformation.Controllers.ParentsController (ParentInformation).
+2022-10-17 12:41:48.9291|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2022-10-17 12:41:48.9291|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2022-10-17 12:41:48.9291|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2022-10-17 12:41:48.9291|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2022-10-17 12:41:48.9291|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2022-10-17 12:41:48.9291|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:41:49.2920|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-17 12:41:49.5836|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller ParentInformation.Controllers.ParentsController (ParentInformation)
+2022-10-17 12:41:49.6047|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:41:49.6047|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' using the name '' in request data ...
+2022-10-17 12:41:49.6139|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-10-17 12:41:49.6426|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'ParentInformation.DTOs.ParentDTO'
+2022-10-17 12:41:49.6426|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:41:49.6426|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:41:49.6426|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO' ...
+2022-10-17 12:41:49.8715|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parentDTO' of type 'ParentInformation.DTOs.ParentDTO'.
+2022-10-17 12:41:49.8715|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:41:49.8715|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:41:49.8787|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:41:49.8787|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:41:49.8787|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method ParentInformation.Controllers.ParentsController.Create (ParentInformation) - Validation state: Valid
+2022-10-17 12:41:49.8787|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method ParentInformation.Controllers.ParentsController.Create (ParentInformation) with arguments (ParentInformation.DTOs.ParentDTO)
+2022-10-17 12:41:49.8952|INFO|ParentInformation.Controllers.ParentsController|Entered the {nameOf(Create)} method
+2022-10-17 12:41:51.0735|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-17 12:41:51.1508|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|'ParentContext' generated a value for the 'RegistationId' property of new 'Parent' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:41:51.2828|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ParentContext' started tracking 'Parent' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:41:51.2860|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'ParentContext'.
+2022-10-17 12:41:51.2860|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-17 12:41:51.3313|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-17 12:41:51.4397|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:42:03.0314|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:42:03.0389|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2022-10-17 12:42:03.0644|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2022-10-17 12:42:03.1752|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2022-10-17 12:42:03.1892|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (7ms).
+2022-10-17 12:42:03.2450|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [parent] ([RegistationId], [Address], [Age], [City], [Country], [EmailAddress], [ParentName], [PrimaryContactPerson], [PrimaryContactPersonPhoneNumber], [RegistrationDate], [SecondaryContactPerson], [SecondaryContactPersonPhoneNumber], [State], [StudentName], [StudentRegistrationId], [Zipcode], [status])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2022-10-17 12:42:03.3979|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (170ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [parent] ([RegistationId], [Address], [Age], [City], [Country], [EmailAddress], [ParentName], [PrimaryContactPerson], [PrimaryContactPersonPhoneNumber], [RegistrationDate], [SecondaryContactPerson], [SecondaryContactPersonPhoneNumber], [State], [StudentName], [StudentRegistrationId], [Zipcode], [status])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+2022-10-17 12:42:03.4117|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2022-10-17 12:42:03.4117|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-17 12:42:03.4268|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-17 12:42:03.4268|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:42:03.4416|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-17 12:42:03.4416|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2022-10-17 12:42:03.4778|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An 'Parent' entity tracked by 'ParentContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-10-17 12:42:03.4778|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'ParentContext' with 1 entities written to the database.
+2022-10-17 12:42:03.4908|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method ParentInformation.Controllers.ParentsController.Create (ParentInformation), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13593.9439ms.
+2022-10-17 12:42:03.4908|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:42:03.4908|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2022-10-17 12:42:03.4908|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:42:03.4908|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2022-10-17 12:42:03.4908|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:42:03.4908|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:42:03.4908|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2022-10-17 12:42:03.4908|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2022-10-17 12:42:03.5068|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2022-10-17 12:42:03.5068|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-10-17 12:42:03.5068|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2022-10-17 12:42:03.5068|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-10-17 12:42:03.5068|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'ParentInformation.Models.ResponseModel'.
+2022-10-17 12:42:03.5195|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2022-10-17 12:42:03.5195|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:42:03.5195|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2022-10-17 12:42:03.5195|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ParentInformation.Controllers.ParentsController.Create (ParentInformation) in 14588.4859ms
+2022-10-17 12:42:03.5195|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ParentInformation.Controllers.ParentsController.Create (ParentInformation)'
+2022-10-17 12:42:03.5195|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-17 12:42:03.5195|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 14804.5065ms 200 application/json; charset=utf-8
