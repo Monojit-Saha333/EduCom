@@ -5,7 +5,13 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParentInformation", "ParentInformation\ParentInformation.csproj", "{6C0C2B65-2831-4288-87A8-47358D16C071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParentInformationTest", "ParentInformationTest\ParentInformationTest.csproj", "{E021E12B-2A59-46E6-ABD4-5E1D160403F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParentInformationTest", "ParentInformationTest\ParentInformationTest.csproj", "{E021E12B-2A59-46E6-ABD4-5E1D160403F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification.API", "Circular.API\Notification.API.csproj", "{EE153CB4-5B08-4CAD-AC53-42C4D6210824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWTAuth", "JWTAuth\JWTAuth.csproj", "{94EEFFC3-7C87-4BBF-8288-7BF73006A51E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthWebApi", "AuthWebApi\AuthWebApi.csproj", "{0162C0B6-8EB2-4507-AE1D-656FBE0CAAD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{E021E12B-2A59-46E6-ABD4-5E1D160403F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E021E12B-2A59-46E6-ABD4-5E1D160403F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E021E12B-2A59-46E6-ABD4-5E1D160403F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE153CB4-5B08-4CAD-AC53-42C4D6210824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE153CB4-5B08-4CAD-AC53-42C4D6210824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE153CB4-5B08-4CAD-AC53-42C4D6210824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE153CB4-5B08-4CAD-AC53-42C4D6210824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94EEFFC3-7C87-4BBF-8288-7BF73006A51E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94EEFFC3-7C87-4BBF-8288-7BF73006A51E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94EEFFC3-7C87-4BBF-8288-7BF73006A51E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94EEFFC3-7C87-4BBF-8288-7BF73006A51E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0162C0B6-8EB2-4507-AE1D-656FBE0CAAD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0162C0B6-8EB2-4507-AE1D-656FBE0CAAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0162C0B6-8EB2-4507-AE1D-656FBE0CAAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0162C0B6-8EB2-4507-AE1D-656FBE0CAAD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

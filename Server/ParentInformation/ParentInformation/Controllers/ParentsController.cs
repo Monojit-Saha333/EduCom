@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Castle.Core.Logging;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
 using ParentInformation.DTOs;
@@ -25,6 +26,7 @@ namespace ParentInformation.Controllers
             
         }
         [HttpPost("RegisterParent")]
+        [Authorize(Roles ="Administrator")]
         public IActionResult Create(ParentDTO parentDTO)
         {
             logger.Info("Entered the {nameOf(Create)} method");
@@ -38,6 +40,7 @@ namespace ParentInformation.Controllers
         }
 
         [HttpGet("ParentsDetails")]
+        [Authorize]
         public IActionResult GetParents()
         {
             logger.Info("Entered the GetParents Action Method");

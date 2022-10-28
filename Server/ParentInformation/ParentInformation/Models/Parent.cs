@@ -15,6 +15,9 @@ namespace ParentInformation.Models
         }
         [Key]
         public Guid RegistationId { get; set; }
+
+        [Required]
+        public string UserName { get; set; }
         [Required]
         public string ParentName { get; set; }
         [Required]
@@ -45,19 +48,9 @@ namespace ParentInformation.Models
 
         [Required]
         public int Age { get; set; }
-
-        //[Required]
-       // public DateTime RegistrationDate { get; set; }
         public string status { get; set; }
         public  DateTime RegistrationDate { get; private set; }
-       /* public DateTime RegistrationDate
-        {
-            get { return registrationDate; }
-            set
-            {
-                value = DateTime.Now.Date;
-            }
-        }*/
+      
 
     }
 }
