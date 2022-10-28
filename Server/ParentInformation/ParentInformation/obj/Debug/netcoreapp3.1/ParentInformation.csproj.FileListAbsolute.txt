@@ -603,3 +603,8 @@ C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation
 C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation\obj\Debug\netcoreapp3.1\ParentInformation.dll
 C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation\obj\Debug\netcoreapp3.1\ParentInformation.pdb
 C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation\obj\Debug\netcoreapp3.1\ParentInformation.genruntimeconfig.cache
+C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\JWTAuth.dll
+C:\Users\2116787\Downloads\applcation\ParentApplication\Server\ParentInformation\ParentInformation\bin\Debug\netcoreapp3.1\JWTAuth.pdb

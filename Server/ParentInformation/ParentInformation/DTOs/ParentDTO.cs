@@ -7,6 +7,8 @@ namespace ParentInformation.DTOs
     public class ParentDTO
     {
         [Required]
+        public string UserName { get; set; }
+        [Required]
         public string ParentName { get; set; }
         [Required]
         public string StudentRegistrationId { get; set; }

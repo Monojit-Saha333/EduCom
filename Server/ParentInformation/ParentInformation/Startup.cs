@@ -18,6 +18,9 @@ using FluentValidation.AspNetCore;
 using System.Reflection;
 using ParentInformation.Validation;
 using ParentInformation.Validations;
+using JWTAuth;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
 
 namespace ParentInformation
 {
@@ -39,11 +42,42 @@ namespace ParentInformation
             services.AddControllers()
         .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentUpdateValidator>());
             services.AddTransient<IParentInfoRepository, ParentInfoRepository>();
+            services.AddCustomJwtAuthentication();
             services.AddDbContext<ParentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
-            services.AddSwaggerGen();
+
+            services.AddSwaggerGen(c =>
+            {
+
+                c.AddSecurityDefinition("bearerAuth", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme."
+                });
+                c.AddSecurityRequirement(
+                    new OpenApiSecurityRequirement
+                {
+                    {
+                          new OpenApiSecurityScheme
+                            {
+                                Reference = new OpenApiReference
+                                {
+                                    Type = ReferenceType.SecurityScheme,
+                                    Id = "bearerAuth"
+                                }
+                            },
+                            new string[] {}
+                    }
+                });
+            });
+
+
 
             var provider = services.BuildServiceProvider();
-            var configuration=provider.GetRequiredService<IConfiguration>();    
+            var configuration = provider.GetRequiredService<IConfiguration>();
             services.AddCors(options =>
             {
                 var frontendURL = configuration.GetValue<string>("frontend_url");
@@ -54,7 +88,7 @@ namespace ParentInformation
             });
         }
 
-        
+
 
 
 
@@ -66,7 +100,7 @@ namespace ParentInformation
             {
                 app.UseDeveloperExceptionPage();
             }
-           
+
             app.UseSwagger();
             app.UseSwaggerUI();
             app.UseMiddleware();
@@ -74,7 +108,7 @@ namespace ParentInformation
             app.UseCors();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

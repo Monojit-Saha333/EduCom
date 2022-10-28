@@ -1,0 +1,505 @@
+2022-10-28 12:09:59.9844|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-28 12:10:01.2516|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-28 12:10:01.6115|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:10:01.6115|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:10:01.6115|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:10:01.6115|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:10:01.6543|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:10:01.6543|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:10:01.6543|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:10:01.6543|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:10:03.1524|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-28 12:10:16.4469|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-28 12:10:17.3394|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-28 12:10:17.4383|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:17.4521|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.5728|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.5979|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:10:18.6155|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (20ms).
+2022-10-28 12:10:18.6366|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:10:18.6930|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (63ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:10:18.6930|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.6930|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7074|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'.
+2022-10-28 12:10:18.7074|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms).
+2022-10-28 12:10:18.7074|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7074|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7074|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:10:18.7576|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (46ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:10:18.7576|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7576|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7576|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7576|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7576|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:10:18.7576|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:10:18.7576|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:10:18.7679|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'.
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms).
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:10:18.7679|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.7679|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.8308|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2022-10-28 12:10:18.8308|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-28 12:10:18.8308|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.8308|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.8308|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-28 12:10:18.8451|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-28 12:10:18.8518|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2022-10-28 12:10:18.8518|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.8518|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.8902|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20221007084259_Parentdb'.
+2022-10-28 12:10:18.9594|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.9594|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:18.9594|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2022-10-28 12:10:18.9899|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2022-10-28 12:10:18.9899|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:10:18.9899|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:10:18.9899|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [parent] (
+    [RegistationId] uniqueidentifier NOT NULL,
+    [ParentName] nvarchar(max) NOT NULL,
+    [StudentRegistrationId] nvarchar(max) NOT NULL,
+    [StudentName] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [State] nvarchar(max) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    [Zipcode] nvarchar(max) NOT NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [PrimaryContactPerson] nvarchar(max) NOT NULL,
+    [PrimaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [SecondaryContactPerson] nvarchar(max) NOT NULL,
+    [SecondaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [status] nvarchar(max) NULL,
+    [RegistrationDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_parent] PRIMARY KEY ([RegistationId])
+);
+2022-10-28 12:10:19.0703|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (48ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [parent] (
+    [RegistationId] uniqueidentifier NOT NULL,
+    [ParentName] nvarchar(max) NOT NULL,
+    [StudentRegistrationId] nvarchar(max) NOT NULL,
+    [StudentName] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [State] nvarchar(max) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    [Zipcode] nvarchar(max) NOT NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [PrimaryContactPerson] nvarchar(max) NOT NULL,
+    [PrimaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [SecondaryContactPerson] nvarchar(max) NOT NULL,
+    [SecondaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [status] nvarchar(max) NULL,
+    [RegistrationDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_parent] PRIMARY KEY ([RegistationId])
+);
+2022-10-28 12:10:19.0703|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2022-10-28 12:10:19.0703|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:19.0703|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:10:19.0789|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-28 12:11:03.6663|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-28 12:11:04.5196|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-28 12:11:04.7143|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:11:04.7143|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:11:04.7143|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:11:04.7143|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:11:04.7749|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.7594|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.7719|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:11:05.7885|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (7ms).
+2022-10-28 12:11:05.8062|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:11:05.8573|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (52ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:11:05.8637|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.8637|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.8803|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'.
+2022-10-28 12:11:05.8803|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms).
+2022-10-28 12:11:05.8803|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.8803|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.8803|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:11:05.9351|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (50ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:11:05.9351|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.9351|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.9801|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2022-10-28 12:11:05.9801|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-28 12:11:05.9801|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.9801|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.9801|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-28 12:11:05.9896|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-28 12:11:05.9896|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2022-10-28 12:11:05.9896|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:05.9896|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:11:06.5015|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-28 12:12:44.6098|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-28 12:12:45.5704|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-28 12:12:45.8188|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:12:45.8313|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:12:45.8313|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:12:45.8313|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:12:45.8640|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:12:45.8640|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:12:45.8640|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:12:45.8640|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:12:46.6970|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-28 12:14:14.0557|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-28 12:14:14.8000|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-28 12:14:14.8529|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:14.8529|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.8245|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.8442|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:14:15.8442|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (11ms).
+2022-10-28 12:14:15.8671|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:14:15.9056|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (43ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:14:15.9085|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9085|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9085|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'.
+2022-10-28 12:14:15.9085|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms).
+2022-10-28 12:14:15.9085|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9085|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9085|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:14:15.9516|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:14:15.9516|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:14:15.9535|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms).
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:14:15.9535|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9535|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9949|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2022-10-28 12:14:15.9949|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-28 12:14:15.9949|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9949|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9949|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-28 12:14:15.9949|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-28 12:14:15.9949|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2022-10-28 12:14:15.9949|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:15.9949|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:16.0232|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20221007084259_Parentdb'.
+2022-10-28 12:14:16.0671|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:16.0671|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:16.0671|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2022-10-28 12:14:16.0793|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2022-10-28 12:14:16.0793|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:14:16.0793|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:14:16.0793|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [parent] (
+    [RegistationId] uniqueidentifier NOT NULL,
+    [ParentName] nvarchar(max) NOT NULL,
+    [StudentRegistrationId] nvarchar(max) NOT NULL,
+    [StudentName] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [State] nvarchar(max) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    [Zipcode] nvarchar(max) NOT NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [PrimaryContactPerson] nvarchar(max) NOT NULL,
+    [PrimaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [SecondaryContactPerson] nvarchar(max) NOT NULL,
+    [SecondaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [status] nvarchar(max) NULL,
+    [RegistrationDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_parent] PRIMARY KEY ([RegistationId])
+);
+2022-10-28 12:14:16.1246|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [parent] (
+    [RegistationId] uniqueidentifier NOT NULL,
+    [ParentName] nvarchar(max) NOT NULL,
+    [StudentRegistrationId] nvarchar(max) NOT NULL,
+    [StudentName] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [State] nvarchar(max) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    [Zipcode] nvarchar(max) NOT NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [PrimaryContactPerson] nvarchar(max) NOT NULL,
+    [PrimaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [SecondaryContactPerson] nvarchar(max) NOT NULL,
+    [SecondaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [status] nvarchar(max) NULL,
+    [RegistrationDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_parent] PRIMARY KEY ([RegistationId])
+);
+2022-10-28 12:14:16.1246|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2022-10-28 12:14:16.1246|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:16.1246|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:16.1246|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-28 12:14:29.3236|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-28 12:14:30.4908|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-28 12:14:30.5581|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-28 12:14:36.2076|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-28 12:14:37.1826|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-28 12:14:37.2557|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:38.4996|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:38.5259|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:14:38.5431|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (15ms).
+2022-10-28 12:14:38.5600|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:14:38.6211|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (62ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:14:38.6211|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:38.6382|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:38.7550|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'master' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:38.7726|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'master' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:38.7726|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:14:38.7726|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:14:38.7726|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ParentDb] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2022-10-28 12:14:39.0423|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (268ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ParentDb] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+END;
+2022-10-28 12:14:39.0423|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:14:39.0423|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (1ms).
+2022-10-28 12:14:39.0472|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+DROP DATABASE [ParentDb];
+2022-10-28 12:14:39.1450|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (97ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+DROP DATABASE [ParentDb];
+2022-10-28 12:14:39.1450|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'master' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:39.1484|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'master' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:39.1484|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
+2022-10-28 12:14:50.8469|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-10-28 12:14:52.0100|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.10 initialized 'ParentContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-10-28 12:14:52.1526|DEBUG|Microsoft.EntityFrameworkCore.Migrations|Migrating using database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:14:52.1736|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:02.9148|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:02.9148|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:02.9148|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|An error occurred using the connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:03.0157|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'master' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:03.0655|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'master' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:03.0655|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:03.0938|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (10ms).
+2022-10-28 12:15:03.0938|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [ParentDb];
+2022-10-28 12:15:04.1478|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1,035ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [ParentDb];
+2022-10-28 12:15:04.1478|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:04.1478|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:15:04.1478|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ParentDb] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2022-10-28 12:15:04.4045|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (249ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [ParentDb] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2022-10-28 12:15:04.4045|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'master' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.4246|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'master' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.4352|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.4532|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.4532|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:04.4532|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:15:04.4532|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:15:04.4794|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:15:04.4794|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.4794|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7325|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'ParentContext'.
+2022-10-28 12:15:04.7374|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'ParentContext'.
+2022-10-28 12:15:04.7541|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:04.7541|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:15:04.7541|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7541|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7541|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2022-10-28 12:15:04.7541|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:15:04.7704|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteScalar'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteScalar' (0ms).
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.7704|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:15:04.8167|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2022-10-28 12:15:04.8167|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.8167|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.8167|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2022-10-28 12:15:04.8167|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2022-10-28 12:15:04.8167|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.8167|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.8167|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-28 12:15:04.8167|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (7ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2022-10-28 12:15:04.8360|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2022-10-28 12:15:04.8360|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.8360|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.8653|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20221007084259_Parentdb'.
+2022-10-28 12:15:04.9010|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.9010|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.9059|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2022-10-28 12:15:04.9059|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2022-10-28 12:15:04.9059|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:04.9059|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:15:04.9059|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [parent] (
+    [RegistationId] uniqueidentifier NOT NULL,
+    [ParentName] nvarchar(max) NOT NULL,
+    [StudentRegistrationId] nvarchar(max) NOT NULL,
+    [StudentName] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [State] nvarchar(max) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    [Zipcode] nvarchar(max) NOT NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [PrimaryContactPerson] nvarchar(max) NOT NULL,
+    [PrimaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [SecondaryContactPerson] nvarchar(max) NOT NULL,
+    [SecondaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [status] nvarchar(max) NULL,
+    [RegistrationDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_parent] PRIMARY KEY ([RegistationId])
+);
+2022-10-28 12:15:04.9311|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [parent] (
+    [RegistationId] uniqueidentifier NOT NULL,
+    [ParentName] nvarchar(max) NOT NULL,
+    [StudentRegistrationId] nvarchar(max) NOT NULL,
+    [StudentName] nvarchar(max) NOT NULL,
+    [Address] nvarchar(max) NOT NULL,
+    [State] nvarchar(max) NOT NULL,
+    [Country] nvarchar(max) NOT NULL,
+    [City] nvarchar(max) NOT NULL,
+    [Zipcode] nvarchar(max) NOT NULL,
+    [EmailAddress] nvarchar(max) NULL,
+    [PrimaryContactPerson] nvarchar(max) NOT NULL,
+    [PrimaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [SecondaryContactPerson] nvarchar(max) NOT NULL,
+    [SecondaryContactPersonPhoneNumber] nvarchar(max) NOT NULL,
+    [Age] int NOT NULL,
+    [status] nvarchar(max) NULL,
+    [RegistrationDate] datetime2 NOT NULL,
+    CONSTRAINT [PK_parent] PRIMARY KEY ([RegistationId])
+);
+2022-10-28 12:15:04.9311|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:04.9311|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:15:04.9311|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221007084259_Parentdb', N'3.1.10');
+2022-10-28 12:15:04.9311|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221007084259_Parentdb', N'3.1.10');
+2022-10-28 12:15:04.9440|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-28 12:15:04.9440|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-28 12:15:04.9440|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2022-10-28 12:15:04.9440|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.9530|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.9530|INFO|Microsoft.EntityFrameworkCore.Migrations|Applying migration '20221028064245_data'.
+2022-10-28 12:15:04.9530|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.9530|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.9530|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2022-10-28 12:15:04.9530|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2022-10-28 12:15:04.9530|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:04.9530|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:15:04.9530|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [parent] ADD [UserName] nvarchar(max) NOT NULL DEFAULT N'';
+2022-10-28 12:15:04.9873|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [parent] ADD [UserName] nvarchar(max) NOT NULL DEFAULT N'';
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteNonQuery'.
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteNonQuery' (0ms).
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221028064245_data', N'3.1.10');
+2022-10-28 12:15:04.9873|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221028064245_data', N'3.1.10');
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'ParentDb' on server '(localdb)\ProjectModels'.
+2022-10-28 12:15:04.9873|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ParentContext' disposed.
