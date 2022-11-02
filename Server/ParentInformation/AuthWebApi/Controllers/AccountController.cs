@@ -23,26 +23,18 @@ namespace AuthWebApi.Controllers
              
         }
         [HttpPost("AddUser")]
-        public ActionResult<AuthenticationResponse> Register([FromBody] UserAccount userAccount)
+        public IActionResult Register([FromBody] UserAccount userAccount)
         {
             
             var accountswithsamecredentials = dbcontext.userAccounts.FirstOrDefault(c => c.UserName == userAccount.UserName);
             if (accountswithsamecredentials != null)
-                return Unauthorized("A User with this user name exist");
+                return Conflict(new { message = "User with this user name exist" });
 
             dbcontext.Add(userAccount);
             dbcontext.SaveChanges();
 
-            AuthenticationRequest authenticationRequest = new AuthenticationRequest
-            {
-                UserName = userAccount.UserName,
-                Password = userAccount.Password
 
-            };
-
-            var login = Authenticate(authenticationRequest);
-
-            return login;
+            return Ok(new {message="Account created"});
         }
         [HttpPost("login")]
         public ActionResult<AuthenticationResponse> Authenticate([FromBody] AuthenticationRequest authenticationRequest)

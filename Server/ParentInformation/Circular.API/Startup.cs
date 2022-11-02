@@ -22,7 +22,7 @@ namespace Notification.API
         {
             Configuration = configuration;
         }
-
+     readonly string Notification_cors_policy = "policy1";
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -32,6 +32,14 @@ namespace Notification.API
             services.AddTransient<INotificationRepository, NotificationRepository>();
             services.AddDbContext<NotificationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("NotificationDbCon")));
             services.AddSwaggerGen();
+          
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy( policy =>
+                {
+                    policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
+                });
+           });
            
         }
 
@@ -46,10 +54,10 @@ namespace Notification.API
             app.UseHttpsRedirection();
             app.UseSwagger();
             app.UseSwaggerUI();
-            /*app.UseCustomMiddleware();*/
+
 
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

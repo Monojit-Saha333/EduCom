@@ -69,8 +69,10 @@ namespace JWTAuth
             return new AuthenticationResponse
             {
                 UserName = userAccount.UserName,
+                UserRole=userAccount.Role,
                 ExpiresIn = (int)tokenExpiryTimeStamp.Subtract(DateTime.Now).TotalSeconds,
                 JwtToken = token
+
 
             };
         }
