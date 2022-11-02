@@ -31,8 +31,8 @@ namespace Notification.API.Controllers
                 return NotFound();
             return Ok(notifications);
         }
-        [HttpGet("Notifications/{id}")]
-        public IActionResult getNotificationById(System.Guid id)
+        [HttpGet("Notification")]
+        public IActionResult getNotificationById(Guid id)
         {
             var notification = _notificationRepo.getNoticeById(id);
             if (notification == null)

@@ -33,6 +33,8 @@ namespace AuthWebApi
             services.AddDbContext<UserAccountDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
             services.AddSwaggerGen();
+            services.AddCors(c => c.AddDefaultPolicy(c2 =>
+            c2.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,7 +50,7 @@ namespace AuthWebApi
             app.UseSwaggerUI();
 
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

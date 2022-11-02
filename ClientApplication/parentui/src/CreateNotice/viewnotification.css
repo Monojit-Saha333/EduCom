@@ -1,0 +1,21 @@
+.notificationrow{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px rgb(15, 15, 15);
+    border-top: 0.5px rgb(15, 15, 15);
+}
+.notification_table_header{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+#notification_table{
+ margin: 10px 0 0 0 ;
+}
+.notificationrow:hover{
+    background-color: beige;
+    border-radius: 10px;
+
+    
+} 
