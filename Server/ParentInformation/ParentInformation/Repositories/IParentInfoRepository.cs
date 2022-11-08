@@ -15,6 +15,8 @@ namespace ParentInformation.Repositories
         public Task<Parent> GetParentByRegistrationIdAsync(Guid registrationId);
         public Parent GetParentByRegistrationId(Guid registrationId);
         public Task<IEnumerable<Parent>> GetAllParentsAsync();
+
+        public Parent GetParentByUsername(string username); 
         public IEnumerable<Parent> GetAllParents();
         //update
         public void UpdateParent(Parent parent);

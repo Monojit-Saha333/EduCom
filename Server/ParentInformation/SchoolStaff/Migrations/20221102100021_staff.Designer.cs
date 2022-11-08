@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SchoolStaff.Models;
 
 namespace SchoolStaff.Migrations
 {
     [DbContext(typeof(SchoolStaffContext))]
-    partial class SchoolStaffContextModelSnapshot : ModelSnapshot
+    [Migration("20221102100021_staff")]
+    partial class staff
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

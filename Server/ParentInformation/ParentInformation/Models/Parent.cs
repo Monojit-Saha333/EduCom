@@ -6,8 +6,6 @@ namespace ParentInformation.Models
 {
     public class Parent
     {
-
-        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         
         public Parent()
         {

@@ -3,6 +3,7 @@ using SchoolStaff.Repositories;
 using SchoolStaffInformation.Repositories;
 using System.Linq;
 using SchoolStaff.Models;
+using System;
 
 namespace SchoolStaff.Controllers
 {
@@ -47,7 +48,7 @@ namespace SchoolStaff.Controllers
         }
 
         [HttpDelete("DeleteStaff")]
-        public IActionResult Remove(int StaffId)
+        public IActionResult Remove(Guid StaffId)
         {
             _schoolStaffRepository.DeleteStaff(StaffId);
             return Ok("Removed");

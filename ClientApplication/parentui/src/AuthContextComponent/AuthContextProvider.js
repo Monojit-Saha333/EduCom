@@ -1,14 +1,14 @@
 import React from 'react'
 import {useState,createContext} from 'react'
 
-const AuthorizaContext=createContext({});
+const AuthorizeContext=createContext({});
  export  const AuthContextProvider = ({children}) => {
      const [AuthState,setAuthState]=useState({});
   return (
-    <AuthorizaContext.Provider>
+    <AuthorizeContext.Provider value={{AuthState,setAuthState}}>
         {children}
-    </AuthorizaContext.Provider>
+    </AuthorizeContext.Provider>
   )
 }
 
-export default AuthorizaContext;
+export default AuthorizeContext;

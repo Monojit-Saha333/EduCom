@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Castle.Core.Logging;
+using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
@@ -20,13 +21,16 @@ namespace ParentInformation.Controllers
         public static Logger logger = LogManager.GetCurrentClassLogger();
         MapperConfiguration configparentDTO = new MapperConfiguration(cgf => cgf.CreateMap<ParentDTO, Parent>());
         MapperConfiguration parentUpdateDTOConfig = new MapperConfiguration(i => i.CreateMap<ParentUpdateDTO, Parent>());
+
+ 
+
         public ParentsController(IParentInfoRepository parentInfoRepository)
         {
             this._parentInfoRepository = parentInfoRepository;
-            
+
         }
         [HttpPost("RegisterParent")]
-        [Authorize(Roles ="Administrator")]
+        [Authorize(Roles ="User")]
         public IActionResult Create(ParentDTO parentDTO)
         {
             logger.Info("Entered the {nameOf(Create)} method");
@@ -80,5 +84,15 @@ namespace ParentInformation.Controllers
             _parentInfoRepository.DeleteParentByID(id);
             return Ok("removed");
         }
+       
+        [HttpGet("GetParentsByUsername/{userName}")]
+        [Authorize]
+        public  IActionResult GetParentByUserName(String userName)
+        {
+          var parentbyusername=  _parentInfoRepository.GetParentByUsername(userName);
+            if (parentbyusername == null)
+                return NotFound(new {message="user not found"});
+            return Ok(parentbyusername);
+}
     }
 }

@@ -76,5 +76,15 @@ namespace ParentInformation.Repositories
             context.parent.Remove(x);
             context.SaveChanges();
         }
+
+       public  Parent GetParentByUsername(string username)
+        {
+            var parentsbyusername = context.parent.SingleOrDefault(u => u.UserName == username);
+            if (parentsbyusername == null)
+                return null;
+            return parentsbyusername;
+        }
+
+     
     }
 }

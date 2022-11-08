@@ -17,7 +17,7 @@ namespace SchoolStaff.Repositories
        //update
         public void UpdateStaff(Staff staff);
         //delete
-        public void DeleteStaff(int StaffId);
+        public void DeleteStaff(Guid StaffId);
 
     }
 }

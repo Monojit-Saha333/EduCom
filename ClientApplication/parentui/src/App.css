@@ -1,5 +1,6 @@
 body{
   background-color:rgb(98, 190, 167);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -43,4 +44,33 @@ body{
   margin-top: 20px;
   padding-top:20px;
   padding-bottom:20px;
+}
+
+.Welcome-div{
+ 
+  margin:15rem auto auto auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Welcome-div h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#nav-div{
+   margin-bottom: 100px;
+}
+.profile-details-labels{
+  margin-top: 40px;
+}
+.profile-details-labels h4
+{
+  text-align: left;
+}
+.profile-details-values{
+  margin-top: 40px;
+}
+.profile-details-values h4
+{
+  text-align: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
