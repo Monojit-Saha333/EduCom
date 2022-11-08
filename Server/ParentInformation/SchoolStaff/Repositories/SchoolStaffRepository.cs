@@ -1,5 +1,6 @@
 ﻿using SchoolStaff.Models;
 using SchoolStaff.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -23,7 +24,7 @@ namespace SchoolStaffInformation.Repositories
 
        
 
-        public void DeleteStaff(int StaffId)
+        public void DeleteStaff(Guid StaffId)
         {
             var x = context.schoolstaff.SingleOrDefault(s => s.StaffId == StaffId);
             context.schoolstaff.Remove(x);

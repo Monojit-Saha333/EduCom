@@ -12,7 +12,7 @@ namespace JWTAuth
     public class JwtTokenHandler
     {
         public const string JWT_SECURITY_KEY= "IKHKGkgkJgKJgKJgKUGkLkjifJgIfIK";
-        public const int JWT_TOKEN_VALIDITY = 20;
+        public const int JWT_TOKEN_VALIDITY = 10;
         //public const int JWT_TOKEN_EXPIRED = 30;
         private readonly List<UserAccount> _userAccountList;
         public JwtTokenHandler()

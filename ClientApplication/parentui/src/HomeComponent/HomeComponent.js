@@ -5,19 +5,22 @@ import { useEffect, useState } from "react";
 
 function HomeComponent() {
   const [userData, setuserData] = useState([]);
-  const fetchdata = async () => {
-    const { data } = await axios.get("https://localhost:44309/ParentsDetails");
-    setuserData(data);
-  };
-  useEffect(() => {
-    fetchdata();
-  }, []);
+  // const [reloadstate,setreloadstate]=useState(0);
+  useEffect( () => {
+   axios(
+      {url:"https://localhost:44309/ParentsDetails",
+        method:'GET',
+       headers:{ Authorization: `Bearer ${localStorage.accessToken}`}}
+       ).then(res=>setuserData(res.data))
+      
+      //  console.log(userData)
+  },[]);
 
-  //console.log(userData);
   return (
     <>
       <div>
         <ParentInfoTableComponent data={userData} />
+        {/* <button onClick={()=>setreloadstate(reloadstate+1)}> Reload {reloadstate}</button> */}
       </div>
     </>
   );

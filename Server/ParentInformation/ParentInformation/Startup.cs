@@ -21,6 +21,8 @@ using ParentInformation.Validations;
 using JWTAuth;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using FluentValidation;
+using ParentInformation.DTOs;
 
 namespace ParentInformation
 {
@@ -36,7 +38,7 @@ namespace ParentInformation
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(Startup));
             services.AddControllers()
          .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentValidator>());
             services.AddControllers()
@@ -73,7 +75,7 @@ namespace ParentInformation
                     }
                 });
             });
-
+            services.AddScoped<IValidator<ParentUpdateDTO>, ParentUpdateValidator>();
 
 
             var provider = services.BuildServiceProvider();

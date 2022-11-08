@@ -1,12 +1,10 @@
-const Exception=()=>
-{
-    return 
-    (
-        
-        <div>
-            Forbidden
-        </div>
-    )
+
+import React from 'react'
+
+const Exception = () => {
+  return (
+    <div>Exception</div>
+  )
 }
 
-export default Exception;
+export default Exception
