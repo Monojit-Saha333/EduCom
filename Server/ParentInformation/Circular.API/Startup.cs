@@ -18,6 +18,7 @@ namespace Notification.API
 {
     public class Startup
     {
+        private string Connection;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,7 +31,14 @@ namespace Notification.API
         {
             services.AddControllers();
             services.AddTransient<INotificationRepository, NotificationRepository>();
-            services.AddDbContext<NotificationContext>(options => options.UseSqlServer(Configuration.GetConnectionString("NotificationDbCon")));
+            services.AddDbContext<NotificationContext>(options =>
+            {
+                var machinname = Environment.MachineName;
+                if (machinname == "LAPTOP-OT3KHKEE")
+                    Connection = "AnjaliPersonalConnection";
+                options.UseSqlServer(Configuration.GetConnectionString(Connection));
+            });
+           
             services.AddSwaggerGen();
           
             services.AddCors(options =>

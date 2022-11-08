@@ -12,6 +12,10 @@ namespace SchoolStaff.Models
 
         }
         public DbSet<Staff> schoolstaff { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelbuilder)
+        {
+            modelbuilder.Entity<Staff>().HasAlternateKey(schoolstaff => schoolstaff.Username);
+        }
     }
 
  
