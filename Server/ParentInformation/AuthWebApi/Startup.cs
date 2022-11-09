@@ -18,6 +18,7 @@ namespace AuthWebApi
 {
     public class Startup
     {
+        private string Connection;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -31,7 +32,13 @@ namespace AuthWebApi
             services.AddControllers();
             services.AddSingleton<JwtTokenHandler>();
             services.AddDbContext<UserAccountDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+            {
+                var machinname = Environment.MachineName;
+                if (machinname == "LAPTOP-OT3KHKEE")
+                    Connection = "AnjaliPersonalConnection";
+                options.UseSqlServer(Configuration.GetConnectionString(Connection));
+            });
+            
             services.AddSwaggerGen();
             services.AddCors(c => c.AddDefaultPolicy(c2 =>
             c2.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader()));

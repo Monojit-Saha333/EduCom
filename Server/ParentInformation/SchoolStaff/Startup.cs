@@ -17,8 +17,10 @@ using System.Threading.Tasks;
 
 namespace SchoolStaff
 {
+    
     public class Startup
     {
+        private string Connection;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -32,7 +34,13 @@ namespace SchoolStaff
             services.AddControllers();
             services.AddTransient<ISchoolStaffRepository, SchoolStaffRepository>();
 
-            services.AddDbContext<SchoolStaffContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
+            services.AddDbContext<SchoolStaffContext>(options =>
+            {
+                var machinname = Environment.MachineName;
+                if (machinname == "LAPTOP-OT3KHKEE")
+                    Connection = "AnjaliPersonalConnection";
+                options.UseSqlServer(Configuration.GetConnectionString(Connection));
+            }); 
             services.AddSwaggerGen();
         }
 

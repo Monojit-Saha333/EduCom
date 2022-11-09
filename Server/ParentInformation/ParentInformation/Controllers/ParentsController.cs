@@ -86,7 +86,7 @@ namespace ParentInformation.Controllers
         }
        
         [HttpGet("GetParentsByUsername/{userName}")]
-        [Authorize]
+        /*[Authorize]*/
         public  IActionResult GetParentByUserName(String userName)
         {
           var parentbyusername=  _parentInfoRepository.GetParentByUsername(userName);
