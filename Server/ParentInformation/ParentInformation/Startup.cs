@@ -28,6 +28,8 @@ namespace ParentInformation
 {
     public class Startup
     {
+        private  string Connection;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -45,7 +47,14 @@ namespace ParentInformation
         .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentUpdateValidator>());
             services.AddTransient<IParentInfoRepository, ParentInfoRepository>();
             services.AddCustomJwtAuthentication();
-            services.AddDbContext<ParentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("defaultconnection")));
+            services.AddDbContext<ParentContext>(options =>
+            {
+                var machinname = Environment.MachineName;
+                if (machinname == "LAPTOP-OT3KHKEE")
+                    Connection = "AnjaliPersonalConnection";
+                options.UseSqlServer(Configuration.GetConnectionString(Connection));
+                });
+        
 
             services.AddSwaggerGen(c =>
             {
