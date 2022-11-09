@@ -10,8 +10,8 @@ using SchoolStaff.Models;
 namespace SchoolStaff.Migrations
 {
     [DbContext(typeof(SchoolStaffContext))]
-    [Migration("20221108144518_SchoolStDb")]
-    partial class SchoolStDb
+    [Migration("20221109104513_db")]
+    partial class db
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -28,15 +28,19 @@ namespace SchoolStaff.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("City")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Country")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("StaffEmail")
@@ -48,6 +52,7 @@ namespace SchoolStaff.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("State")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
@@ -55,6 +60,7 @@ namespace SchoolStaff.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Zipcode")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("StaffId");

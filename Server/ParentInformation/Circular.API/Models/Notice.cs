@@ -5,11 +5,19 @@ namespace Notification.API.Models
 {
     public class Notice
     {
+        public Notice()
+        {
+            NotificationDate=DateTime.Now;
+        }
         [Key]
         public Guid NoticeId{ get; set; }
-        public DateTime NotificationDate { get; set; }
+        [Required]
+        public DateTime NotificationDate { get; private set; }
+        [Required]
         public string Subject { get; set; }
-        public string Message { get; set; }
+        [Required]
+        public string Body { get; set; }
+        [Required]
         public string NotificationPostedBy { get; set; }
     }
 }

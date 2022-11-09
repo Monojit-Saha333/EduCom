@@ -2,29 +2,41 @@
 
 namespace SchoolStaff.Migrations
 {
-    public partial class SchoolStDb : Migration
+    public partial class db : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.AlterColumn<string>(
+                name: "PhoneNumber",
+                table: "schoolstaff",
+                nullable: false,
+                oldClrType: typeof(string),
+                oldType: "nvarchar(max)",
+                oldNullable: true);
+
             migrationBuilder.AddColumn<string>(
                 name: "Address",
                 table: "schoolstaff",
-                nullable: true);
+                nullable: false,
+                defaultValue: "");
 
             migrationBuilder.AddColumn<string>(
                 name: "City",
                 table: "schoolstaff",
-                nullable: true);
+                nullable: false,
+                defaultValue: "");
 
             migrationBuilder.AddColumn<string>(
                 name: "Country",
                 table: "schoolstaff",
-                nullable: true);
+                nullable: false,
+                defaultValue: "");
 
             migrationBuilder.AddColumn<string>(
                 name: "State",
                 table: "schoolstaff",
-                nullable: true);
+                nullable: false,
+                defaultValue: "");
 
             migrationBuilder.AddColumn<string>(
                 name: "Username",
@@ -35,7 +47,8 @@ namespace SchoolStaff.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "Zipcode",
                 table: "schoolstaff",
-                nullable: true);
+                nullable: false,
+                defaultValue: "");
 
             migrationBuilder.AddUniqueConstraint(
                 name: "AK_schoolstaff_Username",
@@ -72,6 +85,13 @@ namespace SchoolStaff.Migrations
             migrationBuilder.DropColumn(
                 name: "Zipcode",
                 table: "schoolstaff");
+
+            migrationBuilder.AlterColumn<string>(
+                name: "PhoneNumber",
+                table: "schoolstaff",
+                type: "nvarchar(max)",
+                nullable: true,
+                oldClrType: typeof(string));
         }
     }
 }

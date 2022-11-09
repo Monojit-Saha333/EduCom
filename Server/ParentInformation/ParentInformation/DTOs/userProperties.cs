@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ParentInformation.DTOs
+namespace ParentInfo.API.DTOs
 {
     public class userProperties
     {

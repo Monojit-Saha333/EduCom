@@ -13,28 +13,6 @@ namespace JWTAuth
     {
         public const string JWT_SECURITY_KEY= "IKHKGkgkJgKJgKJgKUGkLkjifJgIfIK";
         public const int JWT_TOKEN_VALIDITY = 10;
-        //public const int JWT_TOKEN_EXPIRED = 30;
-        private readonly List<UserAccount> _userAccountList;
-        public JwtTokenHandler()
-        {
-            _userAccountList = new List<UserAccount>()
-            {
-                new UserAccount(){ 
-                UserName="Admin",
-                Password="Admin123",
-                Role="Administrator"
-                },
-                new UserAccount()
-                {
-                    UserName="User01",
-                    Password="User01",
-                    Role="User"
-                }
-                };
-
-            
-
-        }
 
         public AuthenticationResponse GenerateJwtToken(AuthenticationRequest authenticationRequest,List<UserAccount> userAccounts)
         {

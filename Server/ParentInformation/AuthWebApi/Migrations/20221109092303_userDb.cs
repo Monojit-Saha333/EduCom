@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ParentInformation.Migrations
+namespace AuthWebApi.Migrations
 {
-    public partial class ParentDatabase : Migration
+    public partial class userDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

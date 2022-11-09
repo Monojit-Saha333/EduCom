@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ParentInformation.Models
+namespace ParentInfo.API.Models
 {
     public class ResponseModel
     {

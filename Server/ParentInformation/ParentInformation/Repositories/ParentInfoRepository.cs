@@ -2,14 +2,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Newtonsoft.Json;
-using ParentInformation.Models;
+using ParentInfo.API.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ParentInformation.Repositories
+namespace ParentInfo.API.Repositories
 {
     public class ParentInfoRepository : IParentInfoRepository
     {
@@ -17,7 +17,7 @@ namespace ParentInformation.Repositories
 
         public ParentInfoRepository(ParentContext dbcontext)
         {
-            this.context = dbcontext;
+            context = dbcontext;
         }
         //create command
         public void CreateParent(Parent parent)
@@ -35,9 +35,9 @@ namespace ParentInformation.Repositories
             responseModel.RegistrationId = parent.RegistationId;
             responseModel.status = parent.status;
             return responseModel;
-           }
+        }
 
-       //read 
+        //read 
         public IEnumerable<Parent> GetAllParents()
         {
             var allparents = context.parent;
@@ -47,7 +47,7 @@ namespace ParentInformation.Repositories
 
         public async Task<IEnumerable<Parent>> GetAllParentsAsync()
         {
-            var parents = await context.parent.ToListAsync<Parent>();
+            var parents = await context.parent.ToListAsync();
             return parents;
 
         }
@@ -77,7 +77,7 @@ namespace ParentInformation.Repositories
             context.SaveChanges();
         }
 
-       public  Parent GetParentByUsername(string username)
+        public Parent GetParentByUsername(string username)
         {
             var parentsbyusername = context.parent.SingleOrDefault(u => u.UserName == username);
             if (parentsbyusername == null)
@@ -85,6 +85,6 @@ namespace ParentInformation.Repositories
             return parentsbyusername;
         }
 
-     
+
     }
 }

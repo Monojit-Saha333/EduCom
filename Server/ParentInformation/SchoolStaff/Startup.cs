@@ -39,6 +39,8 @@ namespace SchoolStaff
                 var machinname = Environment.MachineName;
                 if (machinname == "LAPTOP-OT3KHKEE")
                     Connection = "AnjaliPersonalConnection";
+                else if (machinname == "LTIN253009")
+                    Connection = "MonojitConnection";
                 options.UseSqlServer(Configuration.GetConnectionString(Connection));
             }); 
             services.AddSwaggerGen();

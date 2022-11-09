@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System;
 
-namespace ParentInformation.DTOs
+namespace ParentInfo.API.DTOs
 {
     public class ParentDTO
     {
@@ -39,10 +39,5 @@ namespace ParentInformation.DTOs
         [Required]
         public int Age { get; set; }
 
-        /// <summary>
-        /// [Required]
-        /// </summary>
-        //public DateTime RegistrationDate { get; set; }
-        
     }
 }
