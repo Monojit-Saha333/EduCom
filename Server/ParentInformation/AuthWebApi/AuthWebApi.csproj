@@ -9,6 +9,8 @@
     <Compile Remove="Migrations\20221027121921_UserAccountdb.Designer.cs" />
     <Compile Remove="Migrations\20221027122130_authdb.cs" />
     <Compile Remove="Migrations\20221027122130_authdb.Designer.cs" />
+    <Compile Remove="Migrations\20221109092041_db.cs" />
+    <Compile Remove="Migrations\20221109092041_db.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

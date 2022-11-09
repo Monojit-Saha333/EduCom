@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
-using ParentInformation.DTOs;
-using ParentInformation.Models;
+using ParentInfo.API.DTOs;
+using ParentInfo.API.Models;
 using System;
 using System.Reflection.Metadata;
 
-namespace ParentInformation.Validation
+namespace ParentInfo.API.Validations
 {
     public class ParentValidator : AbstractValidator<ParentDTO>
     {
@@ -12,16 +12,16 @@ namespace ParentInformation.Validation
         {
             RuleFor(x => x.StudentName).NotEmpty();
             RuleFor(x => x.StudentName).Matches("[a-zA-Z\\s]");
-       
+
 
             RuleFor(x => x.ParentName)
                 .NotNull()
                 .NotEmpty().WithMessage("Required")
                 .Matches("[a-zA-Z\\s]").WithMessage("{PropertyName} must contain only alphabets and space.");
 
-             RuleFor(x => x.Zipcode)
-            .NotEmpty().WithMessage("Required")
-            .Matches("[1-9][0-9]{5}$").WithMessage("{PropertyName} must contain only 6 digits.");
+            RuleFor(x => x.Zipcode)
+           .NotEmpty().WithMessage("Required")
+           .Matches("[1-9][0-9]{5}$").WithMessage("{PropertyName} must contain only 6 digits.");
 
             RuleFor(x => x.City)
             .NotNull()
@@ -43,8 +43,8 @@ namespace ParentInformation.Validation
                 .NotEmpty().WithMessage("Required")
                 .EmailAddress().WithMessage("A valid email address is required");
 
-         
-           
+
+
             RuleFor(x => x.StudentRegistrationId)
                 .NotEmpty().WithMessage("Required");
 
@@ -63,16 +63,16 @@ namespace ParentInformation.Validation
             RuleFor(x => x.SecondaryContactPerson)
                .NotEmpty().WithMessage("Required");
 
-             RuleFor(x => x.Age)
-                .GreaterThan(4).WithMessage("Age should be greater than 4.")
-                .NotEmpty().WithMessage("Required");
+            RuleFor(x => x.Age)
+               .GreaterThan(4).WithMessage("Age should be greater than 4.")
+               .NotEmpty().WithMessage("Required");
 
 
             RuleFor(x => x.StudentRegistrationId)
                  .NotEmpty().WithMessage("Required")
-                 .Matches("^R[0-9]{7}").WithMessage("Registration Number must start with R and must contain 8 characters"); 
+                 .Matches("^R[0-9]{7}").WithMessage("Registration Number must start with R and must contain 8 characters");
 
-
+            RuleFor(user => user.UserName).NotEmpty().WithMessage("Required").Matches("[a-zA-Z\\S][0-9]{4}").WithMessage("Username must start with letters followed by four number");
 
 
 

@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ParentInformation.Models;
+using ParentInfo.API.Models;
 
 namespace ParentInformation.Migrations
 {
     [DbContext(typeof(ParentContext))]
-    [Migration("20221107053109_db")]
+    [Migration("20221109081832_db")]
     partial class db
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

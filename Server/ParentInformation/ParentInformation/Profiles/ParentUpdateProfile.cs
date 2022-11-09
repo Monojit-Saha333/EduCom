@@ -1,15 +1,15 @@
 ﻿using AutoMapper;
-using ParentInformation.DTOs;
-using ParentInformation.Models;
+using ParentInfo.API.DTOs;
+using ParentInfo.API.Models;
 
-namespace ParentInformation.Profiles
+namespace ParentInfo.API.Profiles
 {
-    public class ParentUpdateProfile: Profile
+    public class ParentUpdateProfile : Profile
     {
-      public ParentUpdateProfile()
+        public ParentUpdateProfile()
         {
             CreateMap<ParentUpdateDTO, Parent>();
         }
     }
-   
+
 }

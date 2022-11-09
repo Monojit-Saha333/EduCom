@@ -2,14 +2,14 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ParentInformation.Models
+namespace ParentInfo.API.Models
 {
     public class Parent
     {
-        
+
         public Parent()
         {
-            RegistrationDate=DateTime.Now;
+            RegistrationDate = DateTime.Now;
         }
         [Key]
         public Guid RegistationId { get; set; }
@@ -47,8 +47,8 @@ namespace ParentInformation.Models
         [Required]
         public int Age { get; set; }
         public string status { get; set; }
-        public  DateTime RegistrationDate { get; private set; }
-      
+        public DateTime RegistrationDate { get; private set; }
+
 
     }
 }

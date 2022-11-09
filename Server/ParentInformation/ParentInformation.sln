@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParentInformation", "ParentInformation\ParentInformation.csproj", "{6C0C2B65-2831-4288-87A8-47358D16C071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParentInfo.API", "ParentInformation\ParentInfo.API.csproj", "{6C0C2B65-2831-4288-87A8-47358D16C071}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParentInformationTest", "ParentInformationTest\ParentInformationTest.csproj", "{E021E12B-2A59-46E6-ABD4-5E1D160403F7}"
 EndProject

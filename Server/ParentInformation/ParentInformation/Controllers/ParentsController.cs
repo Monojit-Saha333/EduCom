@@ -4,33 +4,33 @@ using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
-using ParentInformation.DTOs;
-using ParentInformation.Models;
-using ParentInformation.Repositories;
+using ParentInfo.API.DTOs;
+using ParentInfo.API.Repositories;
+using ParentInfo.API.Models;
 using System;
 using System.Linq;
 
-namespace ParentInformation.Controllers
+namespace ParentInfo.API.Controllers
 {
     [ApiController]
     [Route("/")]
     public class ParentsController : ControllerBase
     {
         private readonly IParentInfoRepository _parentInfoRepository;
-       // public readonly IMapper _mapper;
+        // public readonly IMapper _mapper;
         public static Logger logger = LogManager.GetCurrentClassLogger();
         MapperConfiguration configparentDTO = new MapperConfiguration(cgf => cgf.CreateMap<ParentDTO, Parent>());
         MapperConfiguration parentUpdateDTOConfig = new MapperConfiguration(i => i.CreateMap<ParentUpdateDTO, Parent>());
 
- 
+
 
         public ParentsController(IParentInfoRepository parentInfoRepository)
         {
-            this._parentInfoRepository = parentInfoRepository;
+            _parentInfoRepository = parentInfoRepository;
 
         }
         [HttpPost("RegisterParent")]
-        [Authorize(Roles ="User")]
+        [Authorize(Roles = "User")]
         public IActionResult Create(ParentDTO parentDTO)
         {
             logger.Info("Entered the {nameOf(Create)} method");
@@ -71,7 +71,7 @@ namespace ParentInformation.Controllers
             {
                 return BadRequest();
             }
-           Mapper mapper = new Mapper(parentUpdateDTOConfig);
+            Mapper mapper = new Mapper(parentUpdateDTOConfig);
             Parent parent = mapper.Map<Parent>(parentUpdateDTO);
             _parentInfoRepository.UpdateParent(parent);
             return Ok("Data updated ");
@@ -84,15 +84,15 @@ namespace ParentInformation.Controllers
             _parentInfoRepository.DeleteParentByID(id);
             return Ok("removed");
         }
-       
+
         [HttpGet("GetParentsByUsername/{userName}")]
         /*[Authorize]*/
-        public  IActionResult GetParentByUserName(String userName)
+        public IActionResult GetParentByUserName(string userName)
         {
-          var parentbyusername=  _parentInfoRepository.GetParentByUsername(userName);
+            var parentbyusername = _parentInfoRepository.GetParentByUsername(userName);
             if (parentbyusername == null)
-                return NotFound(new {message="user not found"});
+                return NotFound(new { message = "user not found" });
             return Ok(parentbyusername);
-}
+        }
     }
 }

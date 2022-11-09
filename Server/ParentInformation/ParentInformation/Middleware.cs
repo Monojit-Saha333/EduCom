@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using System;
 using System.Threading.Tasks;
 
-namespace ParentInformation
+namespace ParentInfo.API
 {
     // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
     public class Middleware
@@ -18,10 +18,10 @@ namespace ParentInformation
         public async Task Invoke(HttpContext httpContext)
         {
             httpContext.Request.EnableBuffering();
-            var bodyAsText= await new System.IO.StreamReader(httpContext.Request.Body).ReadToEndAsync();
-            
+            var bodyAsText = await new System.IO.StreamReader(httpContext.Request.Body).ReadToEndAsync();
+
             httpContext.Request.Body.Position = 0;
-          //Console.WriteLine();
+            //Console.WriteLine();
             await _next(httpContext);
         }
     }

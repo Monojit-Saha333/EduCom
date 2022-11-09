@@ -1,10 +1,10 @@
 ﻿using FluentValidation;
-using ParentInformation.DTOs;
+using ParentInfo.API.DTOs;
 
-namespace ParentInformation.Validations
+namespace ParentInfo.API.Validations
 {
-    public class ParentUpdateValidator: AbstractValidator<ParentUpdateDTO>
-         
+    public class ParentUpdateValidator : AbstractValidator<ParentUpdateDTO>
+
     {
         //ater
         public ParentUpdateValidator()
@@ -44,9 +44,6 @@ namespace ParentInformation.Validations
 
 
 
-            RuleFor(x => x.StudentRegistrationId)
-                .NotEmpty().WithMessage("Required");
-
             RuleFor(x => x.Address)
                 .NotEmpty().WithMessage("Required");
 
@@ -67,10 +64,6 @@ namespace ParentInformation.Validations
                .NotEmpty().WithMessage("Required");
 
 
-            RuleFor(x => x.StudentRegistrationId)
-                 .NotEmpty().WithMessage("Required")
-                 .Matches("^R[0-9]{7}").WithMessage("Registration Number must start with R and must contain 8 characters");
-
 
 
 
@@ -79,6 +72,6 @@ namespace ParentInformation.Validations
         }
 
     }
-    
-    
+
+
 }
