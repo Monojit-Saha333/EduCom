@@ -55,7 +55,7 @@ namespace ParentInfo.API.Controllers
         }
 
         [HttpGet("Parents/{RegId}")]
-        [Authorize]
+
         public IActionResult GetParentsByRegID(Guid RegId)
         {
             var parent = _parentInfoRepository.GetParentByRegistrationId(RegId);
@@ -64,7 +64,7 @@ namespace ParentInfo.API.Controllers
             return Ok(parent);
         }
         [HttpPut("UpdateParents")]
-        [Authorize]
+     
         public IActionResult UpdateParent(ParentUpdateDTO parentUpdateDTO)
         {
             if (!ModelState.IsValid)
@@ -78,7 +78,7 @@ namespace ParentInfo.API.Controllers
 
         }
         [HttpDelete("DeleteParents")]
-        [Authorize]
+     
         public IActionResult Remove(Guid id)
         {
             _parentInfoRepository.DeleteParentByID(id);
@@ -86,7 +86,7 @@ namespace ParentInfo.API.Controllers
         }
 
         [HttpGet("GetParentsByUsername/{userName}")]
-        /*[Authorize]*/
+      
         public IActionResult GetParentByUserName(string userName)
         {
             var parentbyusername = _parentInfoRepository.GetParentByUsername(userName);

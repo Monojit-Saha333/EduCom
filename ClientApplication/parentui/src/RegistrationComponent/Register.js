@@ -48,6 +48,9 @@ function Register() {
   return (
     <div className="Register">
       <Container>
+      <Row>
+      <Col></Col>
+      <Col md={6} >
         <Card>
           <Card.Body>
             <h1>Register</h1>
@@ -92,10 +95,11 @@ function Register() {
                 </Col>
               </Form.Group>
               {/* role */}
-              <Form.Group as={Col} controlId="formPlaintextRole">
-                <Form.Label>
+              <Form.Group as={Row}  className="mb-3" controlId="formPlaintextRole">
+                <Form.Label column md={4}>
                   Role <sup>*</sup>
                 </Form.Label>
+                <Col md="8">
                 <Form.Select
                   name="role"
                   id="role"
@@ -108,10 +112,13 @@ function Register() {
                   <option value="User">User</option>
                   <option value="Admin">Admin</option>
                 </Form.Select>
+                </Col>
               </Form.Group>
-              <Button
+              <Row>
+                <Col>
+                <Button
                 className="float-right"
-                size="lg"
+                size="md"
                 variant="primary"
                 type="submit"
                 id="submit"
@@ -119,9 +126,15 @@ function Register() {
               >
                 Submit
               </Button>
+              </Col>
+              </Row>
+             
             </Form>
           </Card.Body>
         </Card>
+         </Col>
+      <Col></Col>
+      </Row>
       </Container>
     </div>
   );
