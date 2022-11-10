@@ -1,11 +1,15 @@
+using FluentValidation.AspNetCore;
+using JWTAuth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using ParentInfo.API.Models;
 using ParentInfo.API.Repositories;
+using ParentInfo.API.Validations;
 using System;
 
 namespace ParentInfo.API
@@ -22,8 +26,13 @@ namespace ParentInfo.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddAutoMapper(typeof(Startup));
+            services.AddControllers()
+                    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentValidator>());
+            services.AddControllers()
+        .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ParentUpdateValidator>());
             services.AddTransient<IParentInfoRepository, ParentInfoRepository>();
+            services.AddCustomJwtAuthentication();
             services.AddDbContext<ParentContext>(options =>
             {
                 var machinname = Environment.MachineName;
@@ -33,8 +42,36 @@ namespace ParentInfo.API
                     Connection = "MonojitConnection";
                 options.UseSqlServer(Configuration.GetConnectionString(Connection));
             });
+           
+            services.AddSwaggerGen(opt =>
+            {
+     
+                opt.AddSecurityDefinition("bearerAuth", new OpenApiSecurityScheme
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "bearer",
+                    BearerFormat = "JWT",
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme."
+                });
 
-            services.AddSwaggerGen();
+                opt.AddSecurityRequirement(
+                    new OpenApiSecurityRequirement
+                    {
+                        {
+                                 new OpenApiSecurityScheme
+                                 {
+                                     Reference = new OpenApiReference
+                                     {
+                                            Type=ReferenceType.SecurityScheme,
+                                             Id="bearerAuth"
+                                     }
+                                  },
+                                  new string[]{}
+                        }
+                    });
+            });
 
             services.AddCors(options =>
             {
@@ -53,14 +90,14 @@ namespace ParentInfo.API
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseHttpsRedirection();
             app.UseSwagger();
             app.UseSwaggerUI();
+            app.UseHttpsRedirection();
+           
 
-
-            app.UseRouting();
             app.UseCors();
+            app.UseRouting();
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
