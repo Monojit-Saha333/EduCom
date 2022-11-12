@@ -3,7 +3,7 @@ import Navbar from "./Navbar"
 import {useLocation} from "react-router-dom"
 import NoticeComponent from '../CreateNotice/NoticeComponent';
 import Noticeview from '../CreateNotice/ViewNotification';
-import Login from '../LoginComponent/Login';
+import Login from '../Components/Login';
 import AuthorizeContext from '../AuthContextComponent/AuthContextProvider'
 import Welcome from './Welcome';
 

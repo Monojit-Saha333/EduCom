@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation ,useNavigate} from "react-router-dom";
 import { countries } from "../FormComponent/country";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
@@ -9,12 +9,13 @@ import Button from "react-bootstrap/Button";
 import { Card, CarouselItem, Container, Modal } from "react-bootstrap";
 import axios from "axios";
 
-function Register() {
+function Signup() {
   const [formValue, setFormValue] = useState({
     username: "",
     password: "",
     Role: "",
   });
+  const navigate=useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(formValue);
@@ -25,6 +26,9 @@ function Register() {
         data: formValue,
       });
       console.log(response);
+      alert(response?.data?.message);
+
+      navigate("/login")
     } catch (err) {
      if(err.response==null)
         console.log('server Error');
@@ -53,7 +57,7 @@ function Register() {
       <Col md={6} >
         <Card>
           <Card.Body>
-            <h1>Register</h1>
+            <h1>Sign up</h1>
             <Form onSubmit={handleSubmit}>
               {/* user name */}
               <Form.Group
@@ -139,4 +143,4 @@ function Register() {
     </div>
   );
 }
-export default Register;
+export default Signup;
