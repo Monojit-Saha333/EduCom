@@ -63,7 +63,17 @@ const handleApprove=async ()=>
   }
   
 }
-
+const statuscolor=(status)=>
+{
+ 
+  if (status==='rejected')
+  return 'red';
+  if(status==='pending')
+   return 'grey';
+  if(status==='Approved')
+  return 'green';
+  
+}
   return (
     <Container>
       <Card>
@@ -84,7 +94,7 @@ const handleApprove=async ()=>
                   <h3>{UserData?.userName}</h3>
                   <h5>{UserData?.emailAddress}</h5>
                   <Row>
-                  <Col>  <h5 >{UserData?.status}</h5></Col>
+                  <Col><h5 style={{color:statuscolor(UserData?.status)}}>{UserData?.status}</h5></Col>
               
                </Row>
             </Col>
