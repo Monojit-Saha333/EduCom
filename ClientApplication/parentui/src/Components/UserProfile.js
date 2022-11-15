@@ -21,6 +21,17 @@ useEffect(() => {
 
 }, [username])
 
+const statuscolor=(status)=>
+{
+ 
+  if (status==='rejected')
+  return 'red';
+  if(status==='pending')
+   return 'grey';
+  if(status==='Approved')
+  return 'green';
+  
+}
 if(UserData==null)
 
 return (
@@ -51,7 +62,7 @@ return (
                   <h3>{UserData?.userName}</h3>
                   <h5>{UserData?.emailAddress}</h5>
                   <Row>
-                  <Col><h5 >{UserData?.status}</h5></Col>
+                  <Col><h5 style={{color:statuscolor(UserData?.status)}}>{UserData?.status}</h5></Col>
               
                </Row>
             

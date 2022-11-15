@@ -32,12 +32,10 @@ const Notificationdetails = () => {
           Authorization: "Bearer " + localStorage.accessToken,
         },
       });
-      navigate('/DisplayNotices')
+      navigate("/DisplayNotices");
     } catch (error) {
       alert("problem in Deletion");
     }
-
-    
   };
 
   if (noticedata == null) navigate("/error");
@@ -48,18 +46,23 @@ const Notificationdetails = () => {
         Message="Are you sure you want to delete?"
         buttontext={"Yes"}
         buttonclickevent={handleDelete}
-        cancelbuttonclickevent={()=>setShowDeleteModal(false)}
+        cancelbuttonclickevent={() => setShowDeleteModal(false)}
       />
       <Container>
         <Card>
-          <Card.Header>Notice</Card.Header>
+          <Card.Header>
+            <h6>Notice</h6>
+          </Card.Header>
           <Card.Body>
-            <p>Date : {noticedata.notificationDate}</p>
+            <p>
+              Date: {noticedata.notificationDate.substr(0, 10)} Time:{" "}
+              {noticedata.notificationDate.substr(11, 8)}
+            </p>
             <p> Subject : {noticedata.subject}</p>
             <p>{noticedata.body}</p>
           </Card.Body>
           <Card.Footer>
-           <DeleteButton setShowDeleteModal={setShowDeleteModal}/>
+            <DeleteButton setShowDeleteModal={setShowDeleteModal} />
           </Card.Footer>
         </Card>
       </Container>
@@ -67,17 +70,16 @@ const Notificationdetails = () => {
   );
 };
 
-const DeleteButton=({setShowDeleteModal})=>
-{
-  if(localStorage.role==="Admin")
-  return (  
-    <Button 
-    variant="danger"
-    style={{ float: "right", marginLeft: "4px" }}
-    onClick={() => setShowDeleteModal(true)}
-  >
-    Delete Notice
-  </Button>
-);
-}
+const DeleteButton = ({ setShowDeleteModal }) => {
+  if (localStorage.role === "Admin")
+    return (
+      <Button
+        variant="danger"
+        style={{ float: "right", marginLeft: "4px" }}
+        onClick={() => setShowDeleteModal(true)}
+      >
+        Delete Notice
+      </Button>
+    );
+};
 export default Notificationdetails;

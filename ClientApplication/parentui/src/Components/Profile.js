@@ -9,7 +9,8 @@ const Profile = () => {
         <UserProfile />
       </>
     );
-  } else {
+  }
+   else {
     return (
       <>
         <AdminProfile />

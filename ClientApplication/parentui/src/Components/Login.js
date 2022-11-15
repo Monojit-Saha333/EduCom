@@ -89,7 +89,7 @@ function Login() {
                   </Form.Label>
                   <Col md={12}>
                     <Form.Control
-                      type="text"
+                      type="password"
                       placeholder="Password"
                       value={formValue.password}
                       required="on"
@@ -100,7 +100,7 @@ function Login() {
                 <Row>
                   <Col>
                     <p> Not Registered Yet ?</p>
-                    <Link to="/register">Register</Link>
+                    <Link to="/SignUp">Register</Link>
                   </Col>
                   <Col>
                     <Button
