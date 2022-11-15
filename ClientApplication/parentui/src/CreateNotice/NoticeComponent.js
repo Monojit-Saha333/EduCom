@@ -5,30 +5,31 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import { Card, Container, Modal } from "react-bootstrap";
 import axios from "axios";
-import {useLocation} from "react-router-dom";
+import {useLocation,useNavigate} from "react-router-dom";
 
 const NoticeComponent = () => {
     const location=useLocation();
     const noticedata=location.state;
-    console.log(noticedata);
+    const navigate=useNavigate();
   const [formValue, setformValue] = useState({
     subject: "",
-    message: "",
-    notificationPostedBy: "ABC",
+    body: "",
+    notificationPostedBy: localStorage.username,
     "notificationDate":new Date().toJSON()
   });
 
   var [date, setdate] = useState(new Date().toISOString().slice(0, 10));
-const handleSubmit=(e)=>
+const handleSubmit=async(e)=>
 {
     e.preventDefault();
   
-    axios({
+    await axios({
         url:"https://localhost:44318/createNotice",
         method:"POST",
         headers:{},
         data:formValue
-    }).then(console.log(Response))
+    }).then(((response)=>{alert("Notice created  id "+response.data.noticeId); navigate('/DisplayNotices')}))
+
 }
   return (
     <div>
@@ -63,9 +64,9 @@ const handleSubmit=(e)=>
                   as="textarea"
                   rows={5}
                   onChange={(e) =>
-                    setformValue({ ...formValue, message: e.target.value })
+                    setformValue({ ...formValue, body: e.target.value })
                   }
-                  value={formValue.message}
+                  value={formValue.body}
                 />
               </Form.Group>
               <Form.Group as={Col} controlId="formPlaintextPassword">

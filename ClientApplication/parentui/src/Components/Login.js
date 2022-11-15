@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
-import { Card, Container } from "react-bootstrap";
+import { Card, Container,Alert } from "react-bootstrap";
 import axios from "axios";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
@@ -17,6 +17,7 @@ function Login() {
     username: "",
     password: "",
   });
+  const [Alertboxmessage, setAlertboxmessage] = useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -37,8 +38,11 @@ function Login() {
       localStorage.setItem("username", username);
       console.log(AuthState);
       navigate("/", { state: { role, username } });
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      if(err.response.status===401){
+        setAlertboxmessage("Wrong Username or Password");
+      }
+
     }
   };
   const handleChangeUsername = (e) => {
@@ -58,6 +62,7 @@ function Login() {
         <Col md={6}>
           <Card>
             <Card.Body>
+            <Alertbox variant="warning" message={Alertboxmessage} setmessage={setAlertboxmessage}/>
               <h1>Login</h1>
               <hr></hr>
               <Form onSubmit={handleSubmit}>
@@ -119,5 +124,12 @@ function Login() {
     </Container>
   );
 }
-
+const Alertbox = ({ variant, message, setmessage }) => {
+  if (message != null)
+    return (
+      <Alert variant={variant} onClose={() => setmessage(null)} dismissible>
+        {message}
+      </Alert>
+    );
+};
 export default Login;

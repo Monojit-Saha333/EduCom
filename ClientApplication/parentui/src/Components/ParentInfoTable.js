@@ -22,20 +22,25 @@ function ParentInfoTableComponent() {
   return (
     <Container>
       <Card>
-        <Row>
+      <Card.Header>
+      <div id="Parent-table-top">
+      <Row>
           <Col>
-            <h4>Student Name</h4>
+            Student Name
           </Col>
           <Col>
-            <h4>Parent Name</h4>
+            Parent Name
           </Col>
           <Col>
-            <h4>Email Address</h4>
-          </Col>
+            Email </Col>
         </Row>
+        </div>
+        </Card.Header>
+        <Card.Body>
         {Listofparent.map((record) => (
           <ParentTableData record={record} key={record.registationId} />
         ))}
+        </Card.Body>
       </Card>
     </Container>
   );

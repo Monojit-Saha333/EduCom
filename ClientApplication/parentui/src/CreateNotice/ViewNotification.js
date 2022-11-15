@@ -25,16 +25,16 @@ const Noticeview = () => {
       <Container>
         <Card>
         <Card.Header>
-            <h1>Circulars</h1>
-        </Card.Header>
-          <Card.Body>
-          <div className="notification_table_header">
-            <Row>
-              <Col>Date </Col>
-              <Col>Subject</Col>
-              <Col>Posted By</Col>
+        <div className="notification_table_header">
+            <Row> 
+              <Col xs={4}>Date </Col>
+              <Col xs={4}>Subject</Col>
+              <Col xs={4}>Posted By</Col>
             </Row>
         </div>
+        </Card.Header>
+          <Card.Body>
+          
             <Row>
               {List_of_notice.map( (notice)=>
               <Notificationrow notice={notice} key={notice.noticeId}/>

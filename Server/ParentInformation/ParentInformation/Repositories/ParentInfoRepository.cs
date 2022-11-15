@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using Fare;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Newtonsoft.Json;
@@ -7,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
 namespace ParentInfo.API.Repositories
@@ -22,7 +24,7 @@ namespace ParentInfo.API.Repositories
         //create command
         public void CreateParent(Parent parent)
         {
-            parent.status = "submitted";
+            parent.status = "pending";
             context.parent.Add(parent);
             context.SaveChanges();
 
@@ -66,7 +68,7 @@ namespace ParentInfo.API.Repositories
 
         public void UpdateParent(Parent parent)
         {
-            parent.status = "submitted";
+            parent.status = "pending";
             context.parent.Update(parent);
             context.SaveChanges();
         }
@@ -85,6 +87,16 @@ namespace ParentInfo.API.Repositories
             return parentsbyusername;
         }
 
+        void IParentInfoRepository.UpdateStatus(Guid registrationid, string status)
+        {
+            if (registrationid == null || status ==null)
+                throw new NotImplementedException();
+            var parent = GetParentByRegistrationId(registrationid);
 
+            parent.status = status;
+            context.parent.Update(parent);
+
+            context.SaveChanges();
+        }
     }
 }

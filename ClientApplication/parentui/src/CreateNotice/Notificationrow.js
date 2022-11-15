@@ -9,9 +9,9 @@ const Notificationrow=(props)=>
   
      const navigate=useNavigate();
     return(<div className="notificationrow" onClick={()=>{navigate("/Notificationdetails",{state:props.notice})}}><Row>
-        <Col>{notificationDate}</Col>
-        <Col>{subject}</Col>
-        <Col>{notificationPostedBy}</Col>
+        <Col xs={4}>{notificationDate}</Col>
+        <Col xs={4}>{subject}</Col>
+        <Col xs={4}>{notificationPostedBy}</Col>
     </Row>
     </div>);
 }

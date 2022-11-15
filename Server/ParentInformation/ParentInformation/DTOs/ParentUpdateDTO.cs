@@ -7,6 +7,11 @@ namespace ParentInfo.API.DTOs
     {
         [Required]
         public Guid RegistationId { get; set; }
+        [Required]
+        public String UserName { get; set; }
+
+        [Required]
+        public String StudentRegistrationId { get; set; }
         public string ParentName { get; set; }
         [Required]
         public string StudentName { get; set; }

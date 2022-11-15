@@ -1,21 +1,23 @@
 .notificationrow{
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 0.5px rgb(15, 15, 15);
-    border-top: 0.5px rgb(15, 15, 15);
+    font-size: medium;
+     padding: 10px 0 10px 0;
+  
+   
 }
 .notification_table_header{
     text-align: center;
-    font-size: medium;
-    font-weight: bold;
+    font-size: larger;
+   padding: 15px 0 15px 0;
 }
 #notification_table{
  margin: 10px 0 0 0 ;
 }
 .notificationrow:hover{
-    background-color: beige;
+  
+    color: Azure;
     border-radius: 10px;
-
-    
+    background-color:rgb(98, 190, 167); ;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
 } 

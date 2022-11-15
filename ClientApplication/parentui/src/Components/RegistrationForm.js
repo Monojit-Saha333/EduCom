@@ -4,16 +4,20 @@ import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
+import { Container,Card } from "react-bootstrap";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./Form.css";
+
 import Modal from "react-bootstrap/Modal";
+import ModalViews from "./ModalViews";
 
 
 
-function ParentForm() {
+function RegistrationForm() {
+  const user=localStorage.username;
   const [formValue, setFormValue] = useState({
     studentName: "",
+    username:user,
     parentName: "",
     studentRegistrationId: "",
     address: "",
@@ -32,27 +36,21 @@ function ParentForm() {
   const states = countries.find(
     (country) => country.countrycode === formValue.country
   ).states;
-  console.log(states);
   const [displaySubmitModal,setDisplaySubmitModal]=useState(false);
-  const [modalmessage,setmodalmessage]=useState("");
-  function PostUserData(userData) {
+  const [registrationId,setregistrationId]=useState();
+const PostUserData =async(userData) =>{
     return axios
-      .post("https://localhost:44309/RegisterParent", userData)
-      .then((response) => {
-        // alert(
-        //   `your account has been created with Id ${response.data.registrationId}`
-        // );
-        setmodalmessage( response.data.registrationId);
-      });
-  }
-  const handleSubmit = (e) => {
+      .post("https://localhost:44309/RegisterParent", userData,
+      {
+        headers:{
+          Authorization : "bearer "+localStorage.accessToken
+        }}).then(res=>setregistrationId(res.data.registrationId))
+    }
+  
+    const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log(formValue);
-   PostUserData(formValue);
-    // console.log(res);
-    setmodalmessage();
+   await PostUserData(formValue);
     setDisplaySubmitModal(true);
-    
   };
 
   const handlecountrychange = (e) => {
@@ -128,9 +126,16 @@ function ParentForm() {
   };
 
   return (
-    <div className="ParentForm">
-      <h1>Parent Form</h1>
-      <hr></hr>
+    <>
+    <ModalViews show={displaySubmitModal} 
+    Message={"User Registered with Registration Id "+registrationId}
+    buttontext={'Ok'}
+    buttonclickevent={()=>navigate('/Profile')}
+    />
+     <Container>
+     <Card>
+     <Card.Header>Register</Card.Header>
+     <Card.Body>
       <Form onSubmit={handleSubmit}>
         {/* student name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
@@ -147,6 +152,22 @@ function ParentForm() {
             />
           </Col>
         </Form.Group>
+        {/* username */}
+        <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
+          <Form.Label column md="4">
+            User Name <sup>*</sup>
+          </Form.Label>
+          <Col md="8">
+            <Form.Control
+              type="text"
+              placeholder="User Name"
+              value={user}
+              required="on"
+              disabled
+            />
+          </Col>
+        </Form.Group>
+        
         {/* Parent Name */}
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
           <Form.Label column md="4">
@@ -360,27 +381,22 @@ function ParentForm() {
             />
           </Col>
         </Form.Group>
-        <hr></hr>
-
+       
         <Button
-          className="float-right"
-          size="lg"
-          variant="primary"
+          size="md"
+          variant="success"
           type="submit"
           id="submit"
           style={{ float: "right" }}
         >
           Submit
         </Button>
+        
       </Form>
-      <Modal show={displaySubmitModal}>
-      <Modal.Header> Submitted</Modal.Header>
-      <Modal.Body>your account has been created with registration Id {modalmessage}</Modal.Body>
-      <Modal.Footer> 
-      <Button onClick={()=>{navigate("/")}}> Ok</Button>
-      </Modal.Footer>
-      </Modal>
-    </div>
+      </Card.Body>
+      </Card>
+      </Container>
+      </>
   );
 }
-export default ParentForm;
+export default RegistrationForm;
