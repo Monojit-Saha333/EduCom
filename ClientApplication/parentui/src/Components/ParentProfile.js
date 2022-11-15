@@ -2,15 +2,15 @@ import React,{useEffect,useState} from "react";
 import { Row, Col, Container, Card, Button } from "react-bootstrap";
 import Profile from "../images/Profile.png";
 import axios from 'axios';
-import { useLocation } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 
 const ParentProfile = () => {
     const [UserData,setUserData]=useState(null);
     const uselocation = useLocation();
     const state=uselocation.state;
-    const id=state.id;
-    const status="Pending";
-    const style=status=="Approved"?"green":"grey";
+    const id=state?.id;
+    const status =UserData?.status;
+    const navigate=useNavigate();
 
 useEffect(() => {
  axios({
@@ -22,8 +22,47 @@ useEffect(() => {
      console.log(response.data)
     })
 
-}, [])
+}, [status])
 
+const handleReject=async()=>
+{
+  try{
+    const response= await axios({
+      "url":"https://localhost:44309/Update-status?id="+UserData?.registationId+"&status=rejected",
+      method:'PATCH',
+      headers:{
+        Authorization: "Bearer "+localStorage.accessToken
+      }});
+
+  window.location.reload()
+    
+  }
+  catch(error)
+  {
+    alert(error);
+  }
+ 
+
+}
+const handleApprove=async ()=>
+{
+  try{
+  const response= await axios({
+    "url":"https://localhost:44309/Update-status?id="+UserData?.registationId+"&status=Approved",
+    method:'PATCH',
+    headers:{
+      Authorization: "Bearer "+localStorage.accessToken
+    }
+ 
+  })
+  window.location.reload()
+  }
+  catch(error)
+  {
+    alert(error)
+  }
+  
+}
 
   return (
     <Container>
@@ -45,7 +84,7 @@ useEffect(() => {
                   <h3>{UserData?.userName}</h3>
                   <h5>{UserData?.emailAddress}</h5>
                   <Row>
-                  <Col>  <h5 style={{"color":style}}>{status}</h5></Col>
+                  <Col>  <h5 >{UserData?.status}</h5></Col>
               
                </Row>
             </Col>
@@ -114,16 +153,40 @@ useEffect(() => {
 
               </Container>    
           </Row>
+          
         </Card.Body>
         <Card.Footer>
-            
-            <Button style={{ float: "right" ,"margin":"10px"}} size="sm" variant="success">Approve</Button>
-            <Button style={{ float: "right","margin" :"10px"}} size="sm" variant="danger">Reject</Button>
+            <Approvebutton userdata={UserData?.status} handleApprove={handleApprove}/>
+           <RejectButton userdata={UserData?.status} handler={handleReject}/>
          
         </Card.Footer>
       </Card>
     </Container>
   );
 };
+
+const Approvebutton=(props)=>
+{
+  const status=props.userdata;
+  // console.log(props.userdata);
+  if(status==="pending")
+  return (
+    <>
+      <Button onClick={props.handleApprove} style={{ float: "right","margin" :"10px"}} size="sm" variant="success">Approve</Button>
+    </>
+  )
+} 
+
+const RejectButton=({userdata,handler})=>
+{
+  const status=userdata;
+  console.log(status);
+  if(status === "pending" || status==="Approved" )
+  return (
+    <>
+      <Button  onClick={handler} style={{ float: "right","margin" :"10px"}} size="sm" variant="danger">Reject</Button>
+    </>
+  )
+}
 
 export default ParentProfile;

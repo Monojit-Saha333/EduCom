@@ -1,10 +1,13 @@
 import React,{useEffect,useState} from "react";
-import { Row, Col, Container, Card } from "react-bootstrap";
+import { Row, Col, Container, Card,Button } from "react-bootstrap";
 import Profile from "../images/Profile.png";
 import axios from 'axios';
+import { useNavigate } from "react-router-dom";
 
 const UserProfile = () => {
     const [UserData,setUserData]=useState(null);
+    const navigate=useNavigate();
+    const username=localStorage.username;
 
 useEffect(() => {
  axios({
@@ -16,10 +19,19 @@ useEffect(() => {
      console.log(response.data)
     })
 
-}, [])
+}, [username])
 
+if(UserData==null)
 
-  return (
+return (
+ <>
+   <center>
+    Register Parent Details <Button onClick={()=>navigate('/AddParentDetails')}>Start Registration</Button>
+  </center>
+ </>
+)
+else
+return (
     <Container>
       <Card>
         <Card.Header>Profile Details</Card.Header>
@@ -28,7 +40,7 @@ useEffect(() => {
             <Col>
               <img
                 src={Profile}
-                alt="profile photo"
+                alt="pic"
                 width={100}
                 height={100}
               ></img>
@@ -38,8 +50,12 @@ useEffect(() => {
                
                   <h3>{UserData?.userName}</h3>
                   <h5>{UserData?.emailAddress}</h5>
+                  <Row>
+                  <Col><h5 >{UserData?.status}</h5></Col>
+              
+               </Row>
             
-                  <a href="#">Edit</a>
+                <Button size="sm" onClick={()=>navigate('/User/Update',{state:UserData})}>Edit </Button>
                
             </Col>
           </Row>
@@ -112,5 +128,6 @@ useEffect(() => {
     </Container>
   );
 };
+
 
 export default UserProfile;

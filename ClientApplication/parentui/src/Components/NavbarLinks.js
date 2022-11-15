@@ -11,10 +11,18 @@ import NoticeLink from './NoticeLink';
 
 
 
+
 const NavbarLinks = () => {
     const {AuthState,setAuthState}=useAuth();
     const navigate=useNavigate();
     // alert(AuthState.role);
+    const handleSignOut=async ()=>
+{
+  await localStorage.clear(); 
+  navigate('/Login');
+  
+  setAuthState(null);
+}
     if (localStorage?.role!=null)
   return (
     <>
@@ -30,7 +38,7 @@ const NavbarLinks = () => {
          <Nav className='ml-auto'>
          <NoticeLink/>
         <RegisterLink/>
-            <Link class='nav-link' onClick={()=>{localStorage.clear(); setAuthState(null)}} > Sign Out</Link>
+            <Link class='nav-link' onClick={handleSignOut} > Sign Out</Link>
          </Nav>
          </>
   )

@@ -4,7 +4,7 @@ import {Link } from 'react-router-dom';
 const RegisterLink = () => {
     if (localStorage?.role==="User")
     return (
-      <Link to="/create" className='nav-link' >Register</Link>
+      <Link to="/AddParentDetails" className='nav-link' >Register</Link>
     )
 }
 

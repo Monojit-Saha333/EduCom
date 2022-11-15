@@ -20,6 +20,8 @@ namespace ParentInfo.API.Repositories
         public IEnumerable<Parent> GetAllParents();
         //update
         public void UpdateParent(Parent parent);
+
+        public void UpdateStatus(Guid registrationid , string status);
         //delete
         public void DeleteParentByID(Guid parentId);
         public ResponseModel getResponse(Parent parent);

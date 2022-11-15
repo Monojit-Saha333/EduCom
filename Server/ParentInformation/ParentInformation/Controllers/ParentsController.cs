@@ -94,5 +94,14 @@ namespace ParentInfo.API.Controllers
                 return NotFound(new { message = "user not found" });
             return Ok(parentbyusername);
         }
+
+        [HttpPatch("/Update-status")]
+        public IActionResult UpdateStatus(Guid id,string status)
+        {
+            if (id == null || status == null)
+                return BadRequest();
+            _parentInfoRepository.UpdateStatus(id, status);
+            return Ok(" status updated");
+        }
     }
 }

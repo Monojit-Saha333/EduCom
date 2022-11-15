@@ -23,8 +23,8 @@ function ParentInfoTableComponent() {
     <Container>
       <Card>
       <Card.Header>
-      
-        <Row>
+      <div id="Parent-table-top">
+      <Row>
           <Col>
             Student Name
           </Col>
@@ -34,6 +34,7 @@ function ParentInfoTableComponent() {
           <Col>
             Email </Col>
         </Row>
+        </div>
         </Card.Header>
         <Card.Body>
         {Listofparent.map((record) => (

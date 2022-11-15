@@ -74,3 +74,25 @@ body{
   text-align: left;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+#Parent-table-top{
+  text-align: center;
+  font-size: larger;
+ padding: 15px 0 15px 0;
+}
+#Parent-table-body
+{
+  text-align: center;
+  font-size: medium;
+
+ padding: 10px 0 10px 0;
+
+}
+#Parent-table-body:hover
+{
+  color: Azure;
+  border-radius: 10px;
+  background-color:rgb(98, 190, 167); ;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+}
